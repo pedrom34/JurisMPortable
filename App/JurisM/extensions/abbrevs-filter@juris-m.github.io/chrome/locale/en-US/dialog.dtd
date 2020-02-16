@@ -1,0 +1,6 @@
+<!ENTITY  abbrevs-filter.dialogTitle "Manage Abbreviation Lists">
+<!ENTITY  abbrevs-filter.exportButtonLabel "Export">
+<!ENTITY  abbrevs-filter.importButtonLabel "Import">
+<!ENTITY  abbrevs-filter.importRadioFillGaps "fill gaps">
+<!ENTITY  abbrevs-filter.importRadioOverrideLocal "override local entries">
+<!ENTITY  abbrevs-filter.importRadioReplaceLocal "replace local list">

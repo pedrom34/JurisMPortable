@@ -1,0 +1,1613 @@
+{
+  "default": {
+      "nickname": {
+          "Frank Bennett": "the author"
+      },
+      "title": {
+          "George III": "Geo 3",
+          "Resolution": "Res."
+      },
+    "classic": {
+      "William Blackstone, Commentaries": "William Blackstone, \"Commentaries\""
+    },
+    "container-title": {
+      "European Human Rights Reports": "E.H.R.R."
+    },
+    "place": {
+      "ca": "Can.",
+      "ca;ab": "Alta.",
+      "ca;bc": "B.C.",
+      "ca;federal": "Can.",
+      "ca;federal;ab": "Alta.",
+      "ca;federal;bc": "B.C.",
+      "ca;federal;mb": "Man.",
+      "ca;federal;nb": "N.B.",
+      "ca;federal;nl": "Nfld.",
+      "ca;federal;ns": "N.S.",
+      "ca;federal;nt": "N.W.T.",
+      "ca;federal;nu": "Nun.",
+      "ca;federal;on": "Ont.",
+      "ca;federal;pe": "P.E.I.",
+      "ca;federal;qc": "Que.",
+      "ca;federal;sk": "Sask.",
+      "ca;federal;yt": "Yukon",
+      "ca;mb": "Man.",
+      "ca;nb": "N.B.",
+      "ca;nl": "Nfld.",
+      "ca;ns": "N.S.",
+      "ca;nt": "N.W.T.",
+      "ca;nu": "Nun.",
+      "ca;on": "Ont.",
+      "ca;pe": "P.E.I.",
+      "ca;qc": "Que.",
+      "ca;sk": "Sask.",
+      "ca;yt": "Yukon",
+      "gb": "UK",
+      "gb;england.and.wales": "England & Wales",
+      "mn": "Mongolia",
+      "mn;arkhangai": "Arkhangai",
+      "mn;bayan-ulgii": "Bayan-Ulgii",
+      "mn;bayankhongor": "Bayankhongor",
+      "mn;bulgan": "Blugan",
+      "mn;darkhan-uul": "Darkhan-Uul",
+      "mn;dornod": "Dornod",
+      "mn;dornogovi": "Dornogovi",
+      "mn;dundgovi": "Dundgovi",
+      "mn;govi-altai": "Govi-Altai",
+      "mn;govisumber": "Govisumber",
+      "mn;khentii": "Khetii",
+      "mn;khovd": "Khovd",
+      "mn;khuvsgul": "Khuvsgul",
+      "mn;orkhon": "Orkhon",
+      "mn;selenge": "Selenge",
+      "mn;sukhbaatar": "Sukhbaatar",
+      "mn;tuv": "Tuv",
+      "mn;ulaanbaatar": "Ulaanbaatar",
+      "mn;umnugovi": "Umnugovi",
+      "mn;uvs": "Uvs",
+      "mn;uvurkhangai": "Uvurkhangai",
+      "mn;zavkhan": "Zavkhan",
+      "nz": "N.Z.",
+      "us": "U.S.",
+      "us;ak": "Alaska",
+      "us;al": "Ala.",
+      "us;ar": "Ark.",
+      "us;az": "Ariz.",
+      "us;ca": "Cal.",
+      "us;co": "Colo.",
+      "us;ct": "Conn.",
+      "us;de": "Del.",
+      "us;federal-bankr;nd": "D.N.D.",
+      "us;federal-bankr;nd-bankr": "Bankr. D.N.D.",
+      "us;federal-bankr;sd": "D.S.D.",
+      "us;federal-bankr;sd-bankr": "Bankr. D.S.D.",
+      "us;federal-bankr;vt": " D. Vt.",
+      "us;federal-bankr;vt-bankr": "Bankr. D. Vt.",
+      "us;federal;1-cir": "1st Cir.",
+      "us;federal;1-cir-bankr": "B.A.P. 1st Cir.",
+      "us;federal;10-cir": "10th Cir.",
+      "us;federal;10-cir-bankr": "B.A.P. 10th Cir.",
+      "us;federal;11-cir": "11th Cir.",
+      "us;federal;11-cir-bankr": "B.A.P. 11th Cir.",
+      "us;federal;2-cir": "2d Cir.",
+      "us;federal;2-cir-bankr": "B.A.P. 2d Cir.",
+      "us;federal;3-cir": "3d Cir.",
+      "us;federal;3-cir-bankr": "B.A.P. 3d Cir.",
+      "us;federal;4-cir": "4th Cir.",
+      "us;federal;4-cir-bankr": "B.A.P. 4th Cir.",
+      "us;federal;5-cir": "5th Cir.",
+      "us;federal;5-cir-bankr": "B.A.P. 5th Cir.",
+      "us;federal;6-cir": "6th Cir.",
+      "us;federal;6-cir-bankr": "B.A.P. 6th Cir.",
+      "us;federal;7-cir": "7th Cir.",
+      "us;federal;7-cir-bankr": "B.A.P. 7th Cir.",
+      "us;federal;8-cir": "8th Cir.",
+      "us;federal;8-cir-bankr": "B.A.P. 8th Cir.",
+      "us;federal;9-cir": "9th Cir.",
+      "us;federal;9-cir-bankr": "B.A.P. 9th Cir.",
+      "us;federal;ak": "D. Alaska",
+      "us;federal;ak-bankr": "Bankr. D. Alaska",
+      "us;federal;al.middle": "M.D. Ala.",
+      "us;federal;al.middle-bankr": "Bankr. M.D. Ala.",
+      "us;federal;al.northern": "N.D. Ala.",
+      "us;federal;al.northern-bankr": "Bankr. N.D. Ala.",
+      "us;federal;al.southern": "S.D. Ala.",
+      "us;federal;al.southern-bankr": "Bankr. S.D. Ala.",
+      "us;federal;ar.eastern": "E.D. Ark.",
+      "us;federal;ar.eastern-bankr": "Bankr. E.D. Ark.",
+      "us;federal;ar.western": "W.D. Ark.",
+      "us;federal;ar.western-bankr": "Bankr. W.D. Ark.",
+      "us;federal;az": "D. Ariz.",
+      "us;federal;az-bankr": "Bankr. D. Ariz.",
+      "us;federal;ca.central": "C.D. Cal.",
+      "us;federal;ca.central-bankr": "Bankr. C.D. Cal.",
+      "us;federal;ca.eastern": "E.D. Cal.",
+      "us;federal;ca.eastern-bankr": "Bankr. E.D. Cal.",
+      "us;federal;ca.northern": "N.D. Cal.",
+      "us;federal;ca.northern-bankr": "Bankr. N.D. Cal.",
+      "us;federal;ca.southern": "S.D. Cal.",
+      "us;federal;ca.southern-bankr": "Bankr. S.D. Cal.",
+      "us;federal;co": "D. Colo.",
+      "us;federal;co-bankr": "Bankr. D. Colo.",
+      "us;federal;ct": "D. Conn.",
+      "us;federal;ct-bankr": "Bankr. D. Conn.",
+      "us;federal;dc": "D.D.C.",
+      "us;federal;dc-bankr": "Bankr. D.D.C.",
+      "us;federal;de": "D. Del.",
+      "us;federal;de-bankr": "Bankr. D. Del.",
+      "us;federal;fl.middle": "M.D. Fla.",
+      "us;federal;fl.middle-bankr": "Bankr. M.D. Fla.",
+      "us;federal;fl.northern": "N.D. Fla.",
+      "us;federal;fl.northern-bankr": "Bankr. N.D. Fla.",
+      "us;federal;fl.southern": "S.D. Fla.",
+      "us;federal;fl.southern-bankr": "Bankr. S.D. Fla.",
+      "us;federal;ga.middle": "M.D. Ga.",
+      "us;federal;ga.middle-bankr": "Bankr. M.D. Ga.",
+      "us;federal;ga.northern": "N.D. Ga.",
+      "us;federal;ga.northern-bankr": "Bankr. N.D. Ga.",
+      "us;federal;ga.southern": "S.D. Ga.",
+      "us;federal;ga.southern-bankr": "Bankr. S.D. Ga.",
+      "us;federal;hi": "D. Haw.",
+      "us;federal;hi-bankr": "Bankr. D. Haw.",
+      "us;federal;ia.northern": "N.D. Iowa",
+      "us;federal;ia.northern-bankr": "Bankr. N.D. Iowa",
+      "us;federal;ia.southern": "S.D. Iowa",
+      "us;federal;ia.southern-bankr": "Bankr. S.D. Iowa",
+      "us;federal;id": "D. Idaho",
+      "us;federal;id-bankr": "Bankr. D. Idaho",
+      "us;federal;il.central": "C.D. Ill.",
+      "us;federal;il.central-bankr": "Bankr. C.D. Ill.",
+      "us;federal;il.northern": "N.D. Ill.",
+      "us;federal;il.northern-bankr": "Bankr. N.D. Ill.",
+      "us;federal;il.southern": "S.D. Ill.",
+      "us;federal;il.southern-bankr": "Bankr. S.D. Ill.",
+      "us;federal;in.northern": "N.D. Ind.",
+      "us;federal;in.northern-bankr": "Bankr. N.D. Ind.",
+      "us;federal;in.southern": "S.D. Ind.",
+      "us;federal;in.southern-bankr": "Bankr. S.D. Ind.",
+      "us;federal;ks": "D. Kan.",
+      "us;federal;ks-bankr": "Bankr. D. Kan.",
+      "us;federal;ky.eastern": "E.D. Ky.",
+      "us;federal;ky.eastern-bankr": "Bankr. E.D. Ky.",
+      "us;federal;ky.western": "W.D. Ky.",
+      "us;federal;ky.western-bankr": "Bankr. W.D. Ky.",
+      "us;federal;la.eastern": "E.D. La.",
+      "us;federal;la.eastern-bankr": "Bankr. E.D. La.",
+      "us;federal;la.middle": "M.D. La.",
+      "us;federal;la.middle-bankr": "Bankr. M.D. La.",
+      "us;federal;la.western": "W.D. La.",
+      "us;federal;la.western-bankr": "Bankr. W.D. La.",
+      "us;federal;ma": "D. Mass.",
+      "us;federal;ma-bankr": "Bankr. D. Mass.",
+      "us;federal;md": "D. Md.",
+      "us;federal;md-bankr": "Bankr. D. Md.",
+      "us;federal;me": "D. Me.",
+      "us;federal;me-bankr": "Bankr. D. Me.",
+      "us;federal;mi.eastern": "E.D. Mich.",
+      "us;federal;mi.eastern-bankr": "Bankr. E.D. Mich.",
+      "us;federal;mi.western": "W.D. Mich.",
+      "us;federal;mi.western-bankr": "Bankr. W.D. Mich.",
+      "us;federal;mn": "D. Minn.",
+      "us;federal;mn-bankr": "Bankr. D. Minn.",
+      "us;federal;mo.eastern": "E.D. Mo.",
+      "us;federal;mo.eastern-bankr": "Bankr. E.D. Mo.",
+      "us;federal;mo.western": "W.D. Mo.",
+      "us;federal;mo.western-bankr": "Bankr. W.D. Mo.",
+      "us;federal;ms.northern": "N.D. Miss.",
+      "us;federal;ms.northern-bankr": "Bankr. N.D. Miss.",
+      "us;federal;ms.southern": "S.D. Miss.",
+      "us;federal;ms.southern-bankr": "Bankr. S.D. Miss.",
+      "us;federal;mt": "D. Mont.",
+      "us;federal;mt-bankr": "Bankr. D. Mont.",
+      "us;federal;nc.eastern": "E.D.N.C.",
+      "us;federal;nc.eastern-bankr": "Bankr. E.D.N.C.",
+      "us;federal;nc.middle": "M.D.N.C.",
+      "us;federal;nc.middle-bankr": "Bankr. M.D.N.C.",
+      "us;federal;nc.western": "W.D.N.C.",
+      "us;federal;nc.western-bankr": "Bankr. W.D.N.C.",
+      "us;federal;ne": "D. Neb.",
+      "us;federal;ne-bankr": "Bankr. D. Neb.",
+      "us;federal;nh": "D.N.H.",
+      "us;federal;nh-bankr": "Bankr. D.N.H.",
+      "us;federal;nj": "D.N.J.",
+      "us;federal;nj-bankr": "Bankr. D.N.J.",
+      "us;federal;nm": "D.N.M.",
+      "us;federal;nm-bankr": "Bankr. D.N.M.",
+      "us;federal;nv": "D. Nev.",
+      "us;federal;nv-bankr": "Bankr. D. Nev.",
+      "us;federal;ny.eastern": "E.D.N.Y.",
+      "us;federal;ny.eastern-bankr": "Bankr. E.D.N.Y.",
+      "us;federal;ny.northern": "N.D.N.Y.",
+      "us;federal;ny.northern-bankr": "Bankr. N.D.N.Y.",
+      "us;federal;ny.southern": "S.D.N.Y.",
+      "us;federal;ny.southern-bankr": "Bankr. S.D.N.Y.",
+      "us;federal;ny.western": "W.D.N.Y.",
+      "us;federal;ny.western-bankr": "Bankr. W.D.N.Y.",
+      "us;federal;oh.northern": "N.D. Ohio",
+      "us;federal;oh.northern-bankr": "Bankr. N.D. Ohio",
+      "us;federal;oh.southern": "S.D. Ohio",
+      "us;federal;oh.southern-bankr": "Bankr. S.D. Ohio",
+      "us;federal;ok.eastern": "E.D. Okla.",
+      "us;federal;ok.eastern-bankr": "Bankr. E.D. Okla.",
+      "us;federal;ok.northern": "N.D. Okla.",
+      "us;federal;ok.northern-bankr": "Bankr. N.D. Okla.",
+      "us;federal;ok.western": "W.D. Okla.",
+      "us;federal;ok.western-bankr": "Bankr. W.D. Okla.",
+      "us;federal;or": "D. Or.",
+      "us;federal;or-bankr": "Bankr. D. Or.",
+      "us;federal;pa.eastern": "E.D. Pa.",
+      "us;federal;pa.eastern-bankr": "Bankr. E.D. Pa.",
+      "us;federal;pa.middle": "M.D. Pa.",
+      "us;federal;pa.middle-bankr": "Bankr. M.D. Pa.",
+      "us;federal;pa.western": "W.D. Pa.",
+      "us;federal;pa.western-bankr": "Bankr. W.D. Pa.",
+      "us;federal;pr": "D. Puerto Rico",
+      "us;federal;pr-bankr": "Bankr. D. Puerto Rico",
+      "us;federal;ri": "D.R.I.",
+      "us;federal;ri-bankr": "Bankr. D.R.I.",
+      "us;federal;sc": "D.S.C.",
+      "us;federal;sc-bankr": "Bankr. D.S.C.",
+      "us;federal;tn.eastern": "E.D. Tenn.",
+      "us;federal;tn.eastern-bankr": "Bankr. E.D. Tenn.",
+      "us;federal;tn.middle": "M.D. Tenn.",
+      "us;federal;tn.middle-bankr": "Bankr. M.D. Tenn.",
+      "us;federal;tn.western": "W.D. Tenn.",
+      "us;federal;tn.western-bankr": "Bankr. W.D. Tenn.",
+      "us;federal;tx.eastern": "E.D. Tex.",
+      "us;federal;tx.eastern-bankr": "Bankr. E.D. Tex.",
+      "us;federal;tx.northern": "N.D. Tex.",
+      "us;federal;tx.northern-bankr": "Bankr. N.D. Tex.",
+      "us;federal;tx.southern": "S.D. Tex.",
+      "us;federal;tx.southern-bankr": "Bankr. S.D. Tex.",
+      "us;federal;tx.western": "W.D. Tex.",
+      "us;federal;tx.western-bankr": "Bankr. W.D. Tex.",
+      "us;federal;ut": "D. Utah",
+      "us;federal;ut-bankr": "Bankr. D. Utah",
+      "us;federal;va.eastern": "E.D. Va.",
+      "us;federal;va.eastern-bankr": "Bankr. E.D. Va.",
+      "us;federal;va.western": "W.D. Va.",
+      "us;federal;va.western-bankr": "Bankr. W.D. Va.",
+      "us;federal;wa.eastern": "E.D. Wash.",
+      "us;federal;wa.eastern-bankr": "Bankr. E.D. Wash.",
+      "us;federal;wa.western": "W.D. Wash.",
+      "us;federal;wa.western-bankr": "Bankr. W.D. Wash.",
+      "us;federal;wi.eastern": "E.D. Wis.",
+      "us;federal;wi.eastern-bankr": "Bankr. E.D. Wis.",
+      "us;federal;wi.western": "W.D. Wis.",
+      "us;federal;wi.western-bankr": "Bankr. W.D. Wis.",
+      "us;federal;wv.northern": "N.D. W.Va.",
+      "us;federal;wv.northern-bankr": "Bankr. N.D. W.Va.",
+      "us;federal;wv.southern": "S.D. W.Va.",
+      "us;federal;wv.southern-bankr": "Bankr. S.D. W.Va.",
+      "us;federal;wy": "D. Wyo.",
+      "us;federal;wy-bankr": "Bankr. D. Wyo.",
+      "us;fl": "Fla.",
+      "us;ga": "Ga.",
+      "us;hi": "Haw.",
+      "us;ia": "Iowa",
+      "us;id": "Idaho",
+      "us;il": "Ill.",
+      "us;in": "Ind.",
+      "us;ks": "Kan.",
+      "us;ky": "Ky.",
+      "us;la": "La.",
+      "us;ma": "Mass.",
+      "us;md": "Md.",
+      "us;me": "Me.",
+      "us;mi": "Mich.",
+      "us;mn": "Minn.",
+      "us;mo": "Mo.",
+      "us;ms": "Miss.",
+      "us;mt": "Mont.",
+      "us;nc": "N.C.",
+      "us;nd": "N.D.",
+      "us;ne": "Neb.",
+      "us;nh": "N.H.",
+      "us;nj": "N.J.",
+      "us;nm": "N.M.",
+      "us;nv": "Nev.",
+      "us;ny": "N.Y.",
+      "us;oh": "Ohio",
+      "us;ok": "Okla.",
+      "us;or": "Or.",
+      "us;pa": "Pa.",
+      "us;pr": "Puerto Rico",
+      "us;ri": "R.I.",
+      "us;sc": "S.C.",
+      "us;sd": "S.D.",
+      "us;tn": "Tenn.",
+      "us;tx": "Tex.",
+      "us;ut": "Utah",
+      "us;va": "Va.",
+      "us;vt": "Vt.",
+      "us;wa": "Wash.",
+      "us;wi": "Wis.",
+      "us;wv": "W.Va.",
+      "us;wy": "Wyo."
+    },
+    "institution-part": {
+      "Canonical Limited": "Canonical Ltd.",
+      "Columbia Broadcasting System": "CBS",
+      "Internet Engineering Task Force": "IETF",
+      "Microsoft Corporation": "Microsoft Corp.",
+      "National Lawyers Guild": "Nat'l Lawyers Guild",
+      "Publishing House LLC": "Publishing House"
+    },
+    "collection-title": {
+      "My Archive": "My Archive"
+    }
+  },
+  "us": {
+      "title": {
+          "In re Looney": "<i>In re</i> Looney",
+          "Senate Joint Resolution": "S.J. Res.",
+          "Special Session": "Spec. Sess.",
+          "House of Representatives Joint Resolution": "H.R.J. Res."
+      },
+    "container-title": {
+      "Dallas": "Dall.",
+      "A. 2d": "A.2d",
+      "A. 3d": "A.3d",
+      "Atlantic Reporter": "A.",
+      "Atlantic Reporter 2d": "A.2d",
+      "Atlantic Reporter 3d": "A.3d",
+      "B. R.": "B.R.",
+      "BR": "B.R.",
+      "Bankruptcy Reporter": "B.R.",
+      "Black": "Black",
+      "Board of Tax Appeals Memorandum Decisions": "B.T.A.M. (P-H)",
+      "Court Martial Reports": "C.M.R.",
+      "Court of Claims Reports": "Ct. Cl.",
+      "Court of Customs Appeals Reports": "Ct. Cust.",
+      "Court of Customs and Patent Appeals Reports": "C.C.P.A.",
+      "Court of International Trade Reports": "Ct. Int’l Trade",
+      "Cranch": "Cranch",
+      "Ct.Cl.": "Ct. Cl.",
+      "Ct.Int'l Trade": "Ct. Int’l Trade",
+      "Customs Bulletin and Decisions": "Cust. B. & Dec.",
+      "Customs Court Reports": "Cust. Ct.",
+      "Decisions of the United States Court of Military Appeals": "C.M.A.",
+      "F. 2d": "F.2d",
+      "F.2d": "F.2d",
+      "F. 3d": "F.3d",
+      "F.3d": "F.3d",
+      "F. Supp.2d": "F. Supp. 2d",
+      "Supreme Court": "Wall.",
+      "F.Supp.": "F. Supp.",
+      "F.Supp. 2d": "F. Supp. 2d",
+      "F.Supp.2d": "F. Supp. 2d",
+      "Fed.Cl.": "Fed. Cl.",
+      "Federal Appendix": "F. App’x",
+      "Federal Cases": "F. Cas.",
+      "Federal Claims Reporter": "Fed. Cl.",
+      "Federal Reporter": "F.",
+      "Federal Reporter 2d": "F.2d",
+      "Federal Reporter 3d": "F.3d",
+      "Federal Rules Decisions": "F.R.D.",
+      "Federal Rules Service": "Fed. R. Serv. (Callaghan)",
+      "Federal Rules Service 2d": "Fed. R. Serv. 2d (Callaghan)",
+      "Federal Rules Service 3d": "Fed. R. Serv. 3d (West)",
+      "Federal Supplement": "F. Supp.",
+      "Federal Supplement 2d": "F. Supp. 2d",
+      "Howard": "How.",
+      "International Trade Reporter Decisions": "I.T.R.D. (BNA)",
+      "Kan.App.": "Kan. App.",
+      "Kansas Court of Appeals Reports": "Kan. App.",
+      "L. Ed.2d": "L. Ed. 2d",
+      "L.Ed.": "L. Ed.",
+      "L.Ed. 2d": "L. Ed. 2d",
+      "L.Ed.2d": "L. Ed. 2d",
+      "Lawyers' Edition": "L. Ed.",
+      "Lawyers' Edition 2d": "L. Ed. 2d",
+      "M. J.": "M.J.",
+      "N. E.": "N.E.",
+      "N. E. 2d": "N.E.2d",
+      "N. E.2d": "N.E.2d",
+      "N. W.": "N.W.",
+      "N. W. 2d": "N.W.2d",
+      "N. W.2d": "N.W.2d",
+      "N.E. 2d": "N.E.2d",
+      "N.W. 2d": "N.W.2d",
+      "NE 2d": "N.E.2d",
+      "NW 2d": "N.W.2d",
+      "North Eastern Reporter": "N.E.",
+      "North Eastern Reporter 2d": "N.E.2d",
+      "North Western Reporter": "N.W.",
+      "North Western Reporter 2d": "N.W.2d",
+      "Northwest Reporter Second": "N.W.2d",
+      "Ohio St.3d": "Ohio St. 3d",
+      "P. 2d": "P.2d",
+      "P. 3d": "P.3d",
+      "Pacific Reporter": "P.",
+      "Pacific Reporter 2d": "P.2d",
+      "Pacific Reporter 3d": "P.3d",
+      "Pennsylvania Statutes Annotated": "Pa. Stat. Ann.",
+      "Peters": "Pet.",
+      "Reports of the United States Board of Tax Appeals": "B.T.A.",
+      "S. E.": "S.E.",
+      "S. E. 2d": "S.E.2d",
+      "S. E.2d": "S.E.2d",
+      "S. W.": "S.W.",
+      "S. W. 2d": "S.W.2d",
+      "S. W. 3d": "S.W.3d",
+      "S. W.2d": "S.W.2d",
+      "S. W.3d": "S.W.3d",
+      "S.Ct": "S. Ct.",
+      "S.E. 2d": "S.E.2d",
+      "S.W. 2d": "S.W.2d",
+      "S.W. 3d": "S.W.3d",
+      "SE 2d": "S.E.2d",
+      "SW 3d": "S.W.3d",
+      "So.2d": "So. 2d",
+      "So.3d": "So. 3d",
+      "South Eastern Reporter": "S.E.",
+      "South Eastern Reporter 2d": "S.E.2d",
+      "South Eastern Reporter.": "S.E.",
+      "South Eastern Reporter. 2d": "S.E.2d",
+      "South Western": "S.W.",
+      "South Western 2d": "S.W.2d",
+      "South Western 3d": "S.W.3d",
+      "South Western Reporter": "S.W.",
+      "South Western Reporter 2d": "S.W.2d",
+      "South Western Reporter 3d": "S.W.3d",
+      "Southern Reporter": "So.",
+      "Southern Reporter 2d": "So. 2d",
+      "Southern Reporter 3d": "So. 3d",
+      "Statutes at Large": "Stat.",
+      "Supreme Court Reporter": "!authority>>>S. Ct.",
+      "T. C.": "T.C.",
+      "Tax Court Memorandum Decisions": "T.C.M. (CCH)",
+      "U. S.": "!authority>>>U.S.",
+      "US Code": "U.S.C.",
+      "United States Claims Court Reporter": "Cl. Ct.",
+      "United States Claims Reporter": "Ct. Cl.",
+      "United States Law Week": "U.S.L.W.",
+      "United States Reports": "!authority>>>U.S.",
+      "United States Supreme Court Reports": "!authority>>>L. Ed.",
+      "United States Supreme Court Reports 2d": "!authority>>>L. Ed. 2d",
+      "United States Supreme Court Reports, Lawyer's Edition": "!authority>>>L. Ed.",
+      "United States Supreme Court Reports, Lawyer's Edition 2d": "!authority>>>L. Ed. 2d",
+      "United States Supreme Court Reports, Lawyers' Edition": "!authority>>>L. Ed.",
+      "United States Supreme Court Reports, Lawyers' Edition 2d": "!authority>>>L. Ed. 2d",
+      "United States Tax Court Reports": "T.C.",
+      "Vet.App.": "Vet. App.",
+      "Wallace": "Wall.",
+      "West's Bankruptcy Reporter": "B.R.",
+      "West's Military Justice Reporter": "M.J.",
+      "West's Veterans Appeals Reporter": "Vet. App.",
+      "Wheaton": "Wheat.",
+      "Wn. Terr.": "Wash. Terr."
+    },
+    "place": {
+      "us": "U.S."
+    },
+    "institution-part": {
+      "Congress": "Cong.",
+      "Legislature": "Leg.",
+      "Supreme Court": "Sup. Ct.",
+      "Court of Appeals for the Eighth Circuit": "8th Cir.",
+      "House Committee on the Judiciary": "H. Comm. on the Judiciary",
+      "House of Representatives": "H.R.",
+      "Second Circuit Court of Appeals": "2d Cir.",
+      "U.S. Congress": "Cong."
+    }
+  },
+  "us;ak": {
+    "container-title": {
+      "Federal Cases": "F. Cas.",
+      "Alaska Federal Reports": "Alaska Fed.",
+      "Alaska Reports": "Alaska"
+    }
+  },
+  "us;al": {
+    "container-title": {
+      "Alabama Appellate Courts Reports": "Ala. App.",
+      "Alabama Reports": "Ala."
+    }
+  },
+  "us;ar": {
+    "container-title": {
+      "Arkansas Appellate Reports": "Ark. App.",
+      "Arkansas Reports": "Ark."
+    }
+  },
+  "us;az": {
+    "container-title": {
+      "Arizona Appeals Reports": "Ariz. App.",
+      "Arizona Reports": "Ariz."
+    },
+    "place": {
+      "us;az": "Ariz."
+    }
+  },
+  "us;ca": {
+    "container-title": {
+      "Cal. App.2d": "Cal. App. 2d",
+      "Cal. App.3d": "Cal. App. 3d",
+      "Cal. App.4th": "Cal. App. 4th",
+      "Cal. Rptr.2d": "Cal. Rptr. 2d",
+      "Cal. Rptr.3d": "Cal. Rptr. 3d",
+      "Cal.2d": "Cal. 2d",
+      "Cal.3d": "Cal. 3d",
+      "Cal.4th": "Cal. 4th",
+      "Cal.App.": "Cal. App.",
+      "Cal.App. 2d": "Cal. App. 2d",
+      "Cal.App. 2d Supp.": "Cal. App. 2d Supp.",
+      "Cal.App. 3d": "Cal. App. 3d",
+      "Cal.App. 3d Supp.": "Cal. App. 3d Supp.",
+      "Cal.App. 4th": "Cal. App. 4th",
+      "Cal.App. Supp. 2d": "Cal. App. 2d Supp.",
+      "Cal.App. Supp. 3d": "Cal. App. 3d Supp.",
+      "Cal.App. Supp.2d": "Cal. App. 2d Supp.",
+      "Cal.App. Supp.3d": "Cal. App. 3d Supp.",
+      "Cal.App.2d": "Cal. App. 2d",
+      "Cal.App.2d Supp.": "Cal. App. 2d Supp.",
+      "Cal.App.3d": "Cal. App. 3d",
+      "Cal.App.3d Supp.": "Cal. App. 3d Supp.",
+      "Cal.App.4th": "Cal. App. 4th",
+      "Cal.App.Supp.": "Cal. App. Supp.",
+      "Cal.Rptr.": "Cal. Rptr.",
+      "Cal.Rptr. 2d": "Cal. Rptr. 2d",
+      "Cal.Rptr. 3d": "Cal. Rptr. 3d",
+      "Cal.Rptr.2d": "Cal. Rptr. 2d",
+      "Cal.Rptr.3d": "Cal. Rptr. 3d",
+      "California Appellate Reports": "Cal. App.",
+      "California Appellate Reports 2d": "Cal. App. 2d",
+      "California Appellate Reports 3d": "Cal. App. 3d",
+      "California Appellate Reports 4th": "Cal. App. 4th",
+      "California Appellate Reports Supplement": "Cal. App. Supp.",
+      "California Appellate Reports Supplement 2d": "Cal. App. 2d Supp.",
+      "California Appellate Reports Supplement 3d": "Cal. App. 3d Supp.",
+      "California Appellate Reports Supplement 4th": "Cal. App. 4th Supp.",
+      "California Reports": "Cal.",
+      "California Reports 2d": "Cal. 2d",
+      "California Reports 3d": "Cal. 3d",
+      "California Reports 4th": "Cal. 4th",
+      "California Unreported Cases": "Cal. Unrep.",
+      "West's California Reporter": "Cal. Rptr.",
+      "West's California Reporter 2d": "Cal. Rptr. 2d",
+      "West's California Reporter 3d": "Cal. Rptr. 3d",
+      "West’s California Reporter": "Cal. Rptr.",
+      "West’s California Reporter 2d": "Cal. Rptr. 2d",
+      "West’s California Reporter 3d": "Cal. Rptr. 3d"
+    },
+    "place": {
+      "us;ca": "Cal."
+    }
+  },
+  "us;co": {
+    "container-title": {
+      "Colorado Lawyer": "Colo. Law.",
+      "Brief Times Reporter": "Brief Times Rptr.",
+      "Colorado Court of Appeals Reports": "Colo. App.",
+      "Colorado Journal": "Colo. J.",
+      "Colorado Reports": "Colo.",
+      "Law Week Colorado": "L. Week Colo."
+    }
+  },
+  "us;ct": {
+    "container-title": {
+      "Connecticut Appellate Reports": "Conn. App.",
+      "Connecticut Circuit Court Reports": "Conn. Cir. Ct.",
+      "Connecticut Law Reporter": "Conn. L. Rptr.",
+      "Connecticut Reports": "Conn.",
+      "Connecticut Superior Court Reports": "Conn. Super. Ct.",
+      "Connecticut Supplement": "Conn. Supp."
+    }
+  },
+  "us;dc": {
+    "container-title": {
+      "Federal Reporter 3d": "F.3d",
+      "Appeal Cases, District of Columbia": "App. D.C.",
+      "United States Court of Appeals Reports": "U.S. App. D.C."
+    }
+  },
+  "us;de": {
+    "container-title": {
+      "Delaware Cases": "Del. Cas.",
+      "Delaware Chancery Reports": "Del. Ch.",
+      "Delaware Reports": "Del."
+    }
+  },
+  "us;federal": {
+    "institution-part": {
+      "Congress": "Cong.",
+      "Legislature": "Leg.",
+      "Supreme Court": "Sup. Ct.",
+      "District Court": "!here>>>",
+      "Court of Appeals for the Eighth Circuit": "8th Cir.",
+      "House Committee on the Judiciary": "H. Comm. on the Judiciary",
+      "House of Representatives": "H.R.",
+      "Second Circuit Court of Appeals": "2d Cir.",
+      "U.S. Congress": "Cong.",
+      "Bankruptcy Court": "Bankr.",
+      "Eighth Circuit Court of Appeals": "8th Cir.",
+      "Eleventh Circuit Court of Appeals": "11th Cir.",
+      "Fifth Circuit Court of Appeals": "5th Cir.",
+      "First Circuit Court of Appeals": "1st Cir.",
+      "Fourth Circuit Court of Appeals": "4th Cir.",
+      "Ninth Circuit Court of Appeals": "9th Cir.",
+      "Seventh Circuit Court of Appeals": "7th Cir.",
+      "Sixth Circuit Court of Appeals": "6th Cir.",
+      "Tenth Circuit Court of Appeals": "10th Cir.",
+      "Third Circuit Court of Appeals": "3rd Cir."
+    }
+  },
+  "us;federal;dc": {
+    "container-title": {
+      "District of Columbia Reports": "D.C."
+    }
+  },
+  "us;fl": {
+    "container-title": {
+      "Florida Law Weekly": "Fla. L. Weekly",
+      "Florida Law Weekly Supplement": "Fla. L. Weekly Supp.",
+      "Florida Reports": "Fla.",
+      "Florida Supplement": "Fla. Supp.",
+      "Florida Supplement 2d": "Fla. Supp. 2d"
+    }
+  },
+  "us;ga": {
+    "container-title": {
+      "Georgia Appeals Reports": "Ga. App.",
+      "Georgia Reports": "Ga."
+    }
+  },
+  "us;gu": {
+    "container-title": {
+      "Federal Supplement 2d": "F. Supp. 2d",
+      "Guam Reports": "Guam"
+    }
+  },
+  "us;hi": {
+    "container-title": {
+      "Hawaii Appellate Reports": "Haw. App.",
+      "Hawaii Reports(ends with vol. 75)": "Haw.",
+      "West's Hawaii Reports": "Haw.",
+      "West's Hawaii Reports (begins with vol. 76)": "Haw.",
+      "West’s Hawaii Reports": "Haw."
+    }
+  },
+  "us;ia": {
+    "container-title": {
+      "Iowa Reports": "Iowa",
+      "Iowa Reports (Cite to edition published by Clarke for vols. 1-8.)": "Iowa"
+    }
+  },
+  "us;id": {
+    "container-title": {
+      "Idaho Reports": "Idaho"
+    }
+  },
+  "us;il": {
+    "container-title": {
+      "Ill. App.2d": "Ill. App. 2d",
+      "Ill. App.3d": "Ill. App. 3d",
+      "Ill.Dec.": "Ill. Dec.",
+      "Illinois Court of Claims Reports": "Ill. Ct. Cl.",
+      "West's Illinois Decisions": "Ill. Dec.",
+      "West’s Illinois Decisions": "Ill. Dec.",
+      "lllinois Appellate Court Reports": "Ill. App.",
+      "lllinois Appellate Court Reports 2d": "Ill. App. 2d",
+      "lllinois Appellate Court Reports 3d": "Ill. App. 3d",
+      "lllinois Reports": "Ill."
+    }
+  },
+  "us;in": {
+    "container-title": {
+      "Indiana Court of Appeals Reports (prior to 1972, Indiana Appellate Court Reports)": "Ind. App.",
+      "Indiana Reports": "Ind."
+    }
+  },
+  "us;ks": {
+    "container-title": {
+      "Kansas Court of Appeals Reports": "Kan. App.",
+      "Kan. App.2d": "Kan. App. 2d",
+      "Kan.App. 2d": "Kan. App. 2d",
+      "Kan.App.2d": "Kan. App. 2d",
+      "Kansas Court of Appeals Reports 2d": "Kan. App. 2d",
+      "Kansas Reports": "Kan."
+    }
+  },
+  "us;ky": {
+    "container-title": {
+      "Kentucky Appellate Reporter": "Ky. App.",
+      "Kentucky Attorney's Memo": "Ky. Att’y Memo",
+      "Kentucky Law Reporter": "Ky. L. Rptr.",
+      "Kentucky Law Summary": "Ky. L. Summ.",
+      "Kentucky Opinions": "Ky. Op.",
+      "Kentucky Reports": "Ky."
+    }
+  },
+  "us;la": {
+    "container-title": {
+      "Gunby's Reports": "Gunby",
+      "Louisiana Annual Reports": "La. Ann.",
+      "Louisiana Court of Appeals Reports": "La. App.",
+      "Louisiana Reports": "La.",
+      "Peltier's Decisions, Parish at Orleans": "Pelt.",
+      "Teissier, Orleans Court of Appeals": "Teiss."
+    }
+  },
+  "us;ma": {
+    "container-title": {
+      "Appellate Division Advance Sheets": "Mass. App. Div. Adv. Sh.",
+      "Massachusetts Appeals Court Reports": "Mass. App. Ct.",
+      "Massachusetts Appellate Decisions": "Mass. App. Dec.",
+      "Massachusetts Reports": "Mass.",
+      "Massachusetts Reports Supplement": "Mass. Supp. 246",
+      "Reports of MassachusettsAppellate Division": "Mass. App. Div."
+    }
+  },
+  "us;md": {
+    "container-title": {
+      "Maryland Appellate Reports": "Md. App.",
+      "Maryland Reports": "Md."
+    }
+  },
+  "us;me": {
+    "container-title": {
+      "Maine Reports": "Me."
+    }
+  },
+  "us;mi": {
+    "container-title": {
+      "Michigan Appeals Reports": "Mich. App.",
+      "Michigan Court of Claims Reports": "Mich. Ct. CL",
+      "Michigan Reports": "Mich."
+    }
+  },
+  "us;mn": {
+    "container-title": {
+      "Minnesota Reports": "Minn."
+    }
+  },
+  "us;mo": {
+    "container-title": {
+      "Missouri Appeals Reports": "Mo. App.",
+      "Missouri Reports": "Mo."
+    }
+  },
+  "us;ms": {
+    "container-title": {
+      "Mississippi Reports": "Miss."
+    }
+  },
+  "us;mt": {
+    "container-title": {
+      "Montana Reports": "Mont.",
+      "State Reporter": "State Rptr."
+    }
+  },
+  "us;nc": {
+    "container-title": {
+      "North Carolina Court of Appeals Reports": "N.C. App.",
+      "North Carolina Reports": "N.C.",
+      "North Carolina Reports (63 N.C. to date)": "N.C."
+    }
+  },
+  "us;nd": {
+    "container-title": {
+      "Dakota Reports": "Dakota",
+      "North Dakota Reports": "N.D.",
+      "Northwestern Reporter 2d": "N.W.2d"
+    },
+    "institution-entire": {
+      "Supreme Court": "ND",
+      "Court of Appeals": "ND App"
+    }
+  },
+  "us;ne": {
+    "container-title": {
+      "Nebraska Court of Appeals Reports": "Neb. App.",
+      "Nebraska Reports": "Neb."
+    }
+  },
+  "us;nh": {
+    "container-title": {
+      "New Hampshire Reports": "N.H."
+    }
+  },
+  "us;nj": {
+    "container-title": {
+      "New Jersey Administrative Reports": "N.J. Admin.",
+      "New Jersey Administrative Reports 2d": "N.J. Admin. 2d",
+      "New Jersey Equity Reports": "N.J. Eq.",
+      "New Jersey Law Reports": "N.J.L.",
+      "New Jersey Miscellaneous Reports": "N.J. Misc.",
+      "New Jersey Reports": "N.J.",
+      "New Jersey Superior Court Reports": "N.J. Super.",
+      "New Jersey Tax Court Reports": "N.J. Tax"
+    }
+  },
+  "us;nm": {
+    "container-title": {
+      "New Mexico Reports": "N.M."
+    }
+  },
+  "us;nv": {
+    "container-title": {
+      "Nevada Report": "Nev.",
+      "Nevada Reports": "Nev."
+    }
+  },
+  "us;ny": {
+    "container-title": {
+      "Supreme Court Reports": "N.Y. Sup. Ct.",
+      "A.D. 2d": "A.D.2d",
+      "A.D. 3d": "A.D.3d",
+      "AD 2d": "A.D.2d",
+      "AD 3d": "A.D.3d",
+      "Abbott's New Cases": "Abb. N. Cas.",
+      "Abbott's Practice Reports": "Abb. Pr.",
+      "Anthon's Nisi Prius Cases": "Ant. N.P. Cas.",
+      "Appellate Division Reports": "A.D.",
+      "Appellate Division Reports 2d": "A.D.2d",
+      "Appellate Division Reports 3d": "A.D.3d",
+      "Barbour's Chancery Reports": "Barb. Ch.",
+      "Barbour's Supreme Court Reports": "Barb.",
+      "Caines' Cases": "Cai. Cas.",
+      "Caines' Reports": "Cai.",
+      "Clarke's Chancery Reports": "Cl. Ch.",
+      "Coleman & Caines' Cases": "Cole. & Cai. Cas.",
+      "Coleman's Cases": "Cole. Cas.",
+      "Cowen's Reports": "Cow.",
+      "Denio's Reports": "Denio",
+      "Edmond's Select Cases": "Edm. Sel. Cas.",
+      "Edwards' Chancery Reports": "Edw. Ch.",
+      "Hill and Denio Supplement (Lalor)": "Hill & Den.",
+      "Hill's Reports": "Hill",
+      "Hoffman's Chancery Reports": "Hoff. Ch.",
+      "Hopkins' Chancery Reports": "Hopk. Ch.",
+      "Howard's Practice Reports": "How. Pr.",
+      "Johnson's Cases": "Johns. Cas.",
+      "Johnson's Chancery Reports": "Johns. Ch.",
+      "Johnson's Reports": "Johns.",
+      "Lansing's Chancery Reports": "Lans. Ch.",
+      "Lansing's Reports": "Lans.",
+      "Lockwood's Reversed Cases": "Lock. Rev. Cas.",
+      "Misc 2d": "Misc. 2d",
+      "Misc 3d": "Misc. 3d",
+      "Misc.2d": "Misc. 2d",
+      "Misc.3d": "Misc. 3d",
+      "N. Y.": "N.Y.",
+      "N.Y. 2d": "N.Y.2d",
+      "N.Y. 3d": "N.Y.3d",
+      "N.Y.S. 2d": "N.Y.S.2d",
+      "N.Y.S. 3d": "N.Y.S.3d",
+      "NY 2d": "N.Y.2d",
+      "NY 3d": "N.Y.3d",
+      "NYS 2d": "N.Y.S.2d",
+      "NYS 3d": "N.Y.S.3d",
+      "New York Chancery Reports Annotated": "N.Y. Ch. Ann.",
+      "New York Miscellaneous Reports": "Misc.",
+      "New York Miscellaneous Reports 2d": "Misc. 2d",
+      "New York Miscellaneous Reports 3d": "Misc. 3d",
+      "New York Reports": "N.Y.",
+      "New York Reports 2d": "N.Y.2d",
+      "New York Reports 3d": "N.Y.3d",
+      "Paige's Chancery Reports": "Paige Ch.",
+      "Sandford's Chancery Reports": "Sand. Ch.",
+      "Saratoga Chancery Sentinel": "Sarat. Ch. Sent.",
+      "Wendell's Reports": "Wend.",
+      "West's New York Supplement": "N.Y.S.",
+      "West's New York Supplement 2d": "N.Y.S.2d",
+      "West's New York Supplement 3d": "N.Y.S.3d",
+      "West’s New York Supplement": "N.Y.S.",
+      "West’s New York Supplement 2d": "N.Y.S.2d",
+      "West’s New York Supplement 3d": "N.Y.S.3d",
+      "Yates' Select Cases": "Yates Sel. Cas."
+    }
+  },
+  "us;oh": {
+    "container-title": {
+      "Ohio St.3d": "Ohio St. 3d",
+      "Anderson's Unreported Ohio Appellate Cases": "Ohio App. Unrep.",
+      "Baldwin's Ohio Monthly Record": "Ohio Monthly Rec.",
+      "Ohio Appellate Reports": "Ohio App.",
+      "Ohio Appellate Reports 2d": "Ohio App. 2d",
+      "Ohio Appellate Reports 3d": "Ohio App. 3d",
+      "Ohio Bar Reports": "Ohio B.",
+      "Ohio Circuit Court Decisions": "13-23 Ohio C.C. Dec.",
+      "Ohio Circuit Court Reports": "Ohio C.C.",
+      "Ohio Circuit Court Reports, New Series": "Ohio C.C. (n.s.)",
+      "Ohio Circuit Decisions": "Ohio Cir. Dec.",
+      "Ohio Courts of Appeals Reports": "Ohio Ct. App.",
+      "Ohio Decisions": "Ohio Dec.",
+      "Ohio Decisions, Reprint": "Ohio Dec. Reprint",
+      "Ohio Department Reports": "Ohio Dep’t",
+      "Ohio Government Reports": "Ohio Gov’t",
+      "Ohio Law Abstract": "Ohio Law Abs.",
+      "Ohio Law Bulletin": "Ohio L. Bull.",
+      "Ohio Law Reporter": "Ohio L.R.",
+      "Ohio Miscellaneous": "Ohio Misc.",
+      "Ohio Miscellaneous 2d": "Ohio Misc. 2d",
+      "Ohio Nisi Prius Reports": "Ohio N.P.",
+      "Ohio Opinions": "Ohio Op.",
+      "Ohio Opinions 2d": "Ohio Op. 2d",
+      "Ohio Opinions 3d": "Ohio Op. 3d",
+      "Ohio Reports": "Ohio",
+      "Ohio State Reports": "Ohio St.",
+      "Ohio State Reports 2d": "Ohio St. 2d",
+      "Ohio State Reports 3d": "Ohio St. 3d",
+      "Ohio Unreported Cases": "Ohio Unrep. Cas.",
+      "Tappen's Reports": "Tapp. Rep.",
+      "Wilcox's Condensed Reports": "Wilc. Cond. Rep."
+    },
+    "institution-entire": {
+      "Ohio": "Ohio"
+    }
+  },
+  "us;ok": {
+    "container-title": {
+      "Indian Territory Reports": "Indian Terr.",
+      "Oklahoma Criminal Reports": "Okla. Crim.",
+      "Oklahoma Reports": "Okla."
+    }
+  },
+  "us;or": {
+    "container-title": {
+      "Oregon Reports": "Or.",
+      "Oregon Reports, Court of Appeals": "Or. App.",
+      "Oregon Tax Reports": "Or. Tax"
+    }
+  },
+  "us;pa": {
+    "container-title": {
+      "Pa. Commonwealth Ct.": "Pa. Commw.",
+      "Pa. Superior Ct.": "Pa. Super.",
+      "Pennsylvania Commonwealth Court Reports": "Pa. Commw.",
+      "Pennsylvania County Court Reports": "Pa. C.",
+      "Pennsylvania District Reports": "Pa. D.",
+      "Pennsylvania District and County Reports": "Pa. D. & C",
+      "Pennsylvania District and County Reports 2d": "Pa. D. & C.2d",
+      "Pennsylvania District and County Reports 3d": "Pa. D. & C.3d",
+      "Pennsylvania State Reports": "Pa.",
+      "Pennsylvania Superior Court Reports": "Pa. Super."
+    }
+  },
+  "us;pr": {
+    "container-title": {
+      "Puerto Rico": "P.R.",
+      "Decisiones de Puerto Rico": "P.R. Dec.",
+      "Decisiones del Tribunal de Circuito de Apelaciones de Puerto Rico": "T.C.A.",
+      "Official Translations of the Opinions of the Supreme Court of Puerto Rico": "P.R. Offic. Trans.",
+      "Puerto Rico Reports": "P.R.",
+      "Sentencias del Tribunal Supremo de Puerto Rico": "P.R. Sent."
+    }
+  },
+  "us;ri": {
+    "container-title": {
+      "Rhode Island Reports": "R.I."
+    }
+  },
+  "us;sc": {
+    "container-title": {
+      "South Carolina Reports": "S.C."
+    }
+  },
+  "us;sd": {
+    "container-title": {
+      "South Dakota Reports": "S.D."
+    }
+  },
+  "us;tn": {
+    "container-title": {
+      "Tennessee Appeals Reports": "Tenn. App.",
+      "Tennessee Criminal Appeals Reports": "Tenn. Crim. App.",
+      "Tennessee Reports": "Tenn."
+    }
+  },
+  "us;tx": {
+    "container-title": {
+      "Condensed Reports of Decisions in Civil Causes in the Court of Appeals (White & Willson)": "White & W. Willson",
+      "Condensed Reports of Decisions in Civil Causes in the Court of Appeals (Willson)": "White & W. Willson",
+      "Dallam's Opinions": "Dallam",
+      "Digest of the Laws of Texas": "Dallam",
+      "Robards": "Robards",
+      "Synopses of the Decisions of the Supreme Court of Texas Arising from Restraints by Conscript and Other Military Authorities": "Robards",
+      "Texas Civil Appeals Reports": "Tex. Civ. App.",
+      "Texas Court of Appeals Reports": "Tex. Ct. App.",
+      "Texas Criminal Reports": "Tex. Crim.",
+      "Texas Reports": "Tex.",
+      "Texas Supreme Court Journal": "Tex. Sup. Ct. J.",
+      "Texas Unreported Cases (Posey)": "Posey"
+    }
+  },
+  "us;ut": {
+    "container-title": {
+      "Utah Reports": "Utah",
+      "Utah Reports 2d": "Utah 2d",
+      "Vermont Reports": "Vt."
+    }
+  },
+  "us;va": {
+    "container-title": {
+      "Virginia Circuit Court Opinions": "Va. Cir.",
+      "Virginia Court of Appeals Reports": "Va. App.",
+      "Virginia Reports": "Va."
+    }
+  },
+  "us;vi": {
+    "container-title": {
+      "Virgin Islands Reports": "V.I."
+    }
+  },
+  "us;vt": {
+    "container-title": {
+      "Vermont Reports": "Vt."
+    }
+  },
+  "us;wa": {
+    "container-title": {
+      "Wn. Terr.": "Wash. Terr.",
+      "Washington Appellate Reports": "Wash. App.",
+      "Washington Reports": "Wash.",
+      "Washington Reports 2d": "Wash. 2d",
+      "Washington Territory Reports": "Wash. Terr.",
+      "Wn": "Wash.",
+      "Wn. 2d": "Wash. 2d",
+      "Wn. App.": "Wash. App.",
+      "Wn.2d": "Wash. 2d",
+      "Wn.App.": "Wash. App."
+    }
+  },
+  "us;wi": {
+    "container-title": {
+        "Wis.2d": "!jurisdiction,authority>>>Wis. 2d",
+        "Wisconsin Reports": "!jurisdiction,authority>>>Wis.",
+        "Wisconsin Reports 2d": "!jurisdiction,authority>>>Wis. 2d",
+        "Wisconsin Reporter Second": "!jurisdiction,authority>>>Wis. 2d"
+    },
+    "institution-entire": {
+      "Supreme Court": "WI",
+      "Court of Appeals": "WI App"
+    }
+  },
+  "us;wv": {
+    "container-title": {
+      "West Virginia Reports": "W. Va."
+    }
+  },
+  "us;wy": {
+    "container-title": {
+      "Wyoming Reports": "Wyo."
+    }
+  },
+  "coe.int": {
+    "container-title": {
+      "Collection of Decisions": "Eur. Comm’n H.R. Col. Dec.",
+      "Decisions and Reports": "Eur. Comm’n H.R. Dec. & Rep.",
+      "Reports of Judgments and Decisions (Series A)": "Eur. Ct. H.R. (ser. A)"
+    },
+    "institution-entire": {
+      "European Court of Human Rights": "Eur. Ct. H.R."
+    },
+    "institution-part": {
+      "European Court of Human Rights": "Eur. Ct. H.R.",
+      "European Commission of Human Rights": "Eur. Comm'n H.R."
+    }
+  },
+  "un.org": {
+    "container-title": {
+      "United Nations General Assembly Official Record": "U.N. GAOR"
+    },
+    "institution-part": {
+      "General Assembly": "G.A.",
+      "High Court": "H.C."
+    }
+  },
+  "au": {
+    "institution-entire": {
+      "High Court": "HCA",
+      "Australian Capital Territory|Supreme Court": "AUTSC",
+      "Australian Federal Police Disciplinary Tribunal": "AFPDT",
+      "Competition Tribunal": "ACompT",
+      "Copyright Tribunal": "ACopyT",
+      "Defence Forces Discipline Appeal Tribunal": "ADFDAT",
+      "Family Court": "FamCA",
+      "Federal Court": "FCA",
+      "Federal Court|Full Court": "FCAFC",
+      "Federal Magistrate's Court": "FMCA",
+      "Industrial Relations Commission": "AIRComm",
+      "Industrial Relations Court of Australia": "IRCA",
+      "National Native Title Tribunal": "NNTTA",
+      "Native Appeal Tribunal": "AATA",
+      "Refugee Review Tribunal": "RRTA",
+      "Supreme Court": "AUTSC"
+    }
+  },
+  "au;nsw": {
+    "container-title": {
+      "Administrative Law Decisions": "A.L.D.",
+      "Commonwealth Law Reports": "C.L.R.",
+      "Family Law Reports": "Fam. L.R.",
+      "Federal Court Reports": "F.C.",
+      "New South Wales Law Reports": "N.S.W.L.R.",
+      "Northern Territory Law Reports": "N.T.L.R.",
+      "Northern Territory Reports": "N.T.R.",
+      "Queensland Reports": "Q.R.",
+      "Queensland State Reports": "St. R. Qd.",
+      "South Australia Law Reports": "S.A.L.R.",
+      "South Australia State Reports": "S.A.S.R.",
+      "State Reports New South Wales": "S.R. (N.S.W.)",
+      "State Reports South Australia": "S.R.S.A.",
+      "State Reports Tasmania": "Tas. S.R.",
+      "Tasmanian Law Reports": "T.L.R.",
+      "Tasmanian Reports": "Tas. R.",
+      "Victorian Law Reports": "V.L.R.",
+      "Victorian Reports": "V.R.",
+      "Western Australia Law Reports": "W.A.L.R.",
+      "Western Australian Reports": "W.A.R."
+    },
+    "institution-entire": {
+      "Industrial Relations Commission": "NSWIRComm",
+      "Supreme Court": "NSWSC",
+      "Administrative Decisions Tribunal": "NSWADT",
+      "Administrative Decisions Tribunal| Appeal Panel": "NSWADTAP",
+      "Community Services Appeals Tribunal": "NSWCSAT",
+      "Compensation Court": "NSWCC",
+      "Consumer, Trader and Tenancy Tribunal": "NSWCTTT",
+      "Court of Appeal": "NSWCA",
+      "Court of Criminal Appeal": "NSWCCA",
+      "District Court": "NSWDC",
+      "Drug Court": "NSWDRGC",
+      "Dust Diseases Tribunal": "NSWDDT",
+      "Land and Environment Court": "NSALEEC",
+      "Local Government & Pecuniary Interest & Disciplinary Tribunal": "NSWPIDT",
+      "Residential Tenancies Tribunal of NSW": "NSWRTT",
+      "Transport Appeal Board": "NSWTAB",
+      "Workers Compensation Commission": "NSW WCC"
+    }
+  },
+  "au;nt": {
+    "institution-entire": {
+      "Supreme Court": "NTSC",
+      "Anti-Discrimination Commission": "NTADDComm"
+    }
+  },
+  "au;qld": {
+    "institution-entire": {
+      "Supreme Court": "QSC",
+      "Court of Appeal": "QCA",
+      "Anti-Discrimination Tribunal": "QADT",
+      "Building Tribunal": "QBT",
+      "District Court of Queensland": "QDC",
+      "Industrial Court": "QIC",
+      "Land Appeal Court": "QLAC",
+      "Land Court": "QLC",
+      "Medical Assessment Tribunal": "QMAT",
+      "Planning & Environment Court": "QPEC",
+      "Queensland Industrial Relations Commission": "QIRComm"
+    }
+  },
+  "au;sa": {
+    "institution-entire": {
+      "Industrial Relations Commission": "SAIRComm",
+      "Supreme Court": "SASC",
+      "District Court": "SADC",
+      "Environment Resources and Development Court": "SAERDC",
+      "Industrial Relations Court": "SAIRC",
+      "Workers Compensation Appeal Tribunal": "SAWCAT"
+    }
+  },
+  "au;tas": {
+    "institution-entire": {
+      "Supreme Court": "TASSC",
+      "Resource Management and Planning Appeal Tribunal": "TASRMPAT"
+    }
+  },
+  "au;vic": {
+    "institution-entire": {
+      "Supreme Court": "VSC",
+      "Court of Appeal": "VSCA",
+      "Civil and Administrative Tribunal": "VCAT",
+      "County Court": "VCC"
+    }
+  },
+  "au;wa": {
+    "institution-entire": {
+      "Family Court": "FamCWA",
+      "Supreme Court": "WASC",
+      "District Court": "WADC",
+      "Children’s Court": "WACC",
+      "State Administrative Tribunal": "WASAT",
+      "State Administrative Tribunal|Equal Opportunity Tribunal": "WAEOT",
+      "State Administrative Tribunal|Guardianship and Administration Board": "WAGAB",
+      "State Administrative Tribunal|Office of the Strata Titles Referee": "WASTR",
+      "State Administrative Tribunal|Town Planning Appeal Tribunal": "WATPAT",
+      "Supreme Court|Criminal Appeal": "WASCA"
+    }
+  },
+  "ca": {
+    "container-title": {
+      "Federal Court Reports": "F.C.",
+      "Alberta Law Reports": "Alta. L.R.",
+      "Alberta Reports": "A.R.",
+      "British Columbia Reports": "B.C.R.",
+      "Canada Law Reports: Supreme Court of Canada": "!authority>>>S.C.R.",
+      "Canada Rederal Court Reports": "F.C.",
+      "Canada Supreme Court Reports": "!authority>>>S.C.R.",
+      "Exchequer Court of Canada Reports": "Ex. C.R.",
+      "Manitoba Reports": "Man. R.",
+      "New Brunswick Reports": "N.B.R.",
+      "New Brunswick Reports (2d)": "N.B.R. (2d)",
+      "Newfoundland & Prince Edward Island Reports": "Nfld. & P.E.I.R.",
+      "Northwest Territories Reports": "N.Z.T.R.",
+      "Nova Scotia Reports": "N.S.R.",
+      "Nova Scotia Reports (2d)": "N.S.R. (2d)",
+      "Ontario Law Reports": "O.L.R.",
+      "Ontario Reports (2d)": "!jurisdiction>>>O.R. (2d)",
+      "Ontario Reports (3d)": "!jurisdiction>>>O.R. (3d)",
+      "Ontario Reports Second": "!jurisdiction>>>O.R. (2d)",
+      "Ontario Weekly Notes": "O.W.N.",
+      "Rapports judiciaries officiels de Québec: Cour du Banc de la Reine/du Roi": "B.R.",
+      "Rapports judiciaries officiels de Québec: Cour supérieure": "C.S.",
+      "Recueils de jurisprudence du Québec: Cour d'appel": "C.A.",
+      "Recueils de jurisprudence du Québec: Cour des Sessions de la paix": "C.S.P.",
+      "Recueils de jurisprudence du Québec: Cour du Banc de la Reine/du Roi": "B.R.",
+      "Recueils de jurisprudence du Québec: Cour du bein-être social": "C.B.E.S.",
+      "Recueils de jurisprudence du Québec: Cour provinciale": "C.P.",
+      "Recueils de jurisprudence du Québec: Tribunal de la jeunesse": "T.J.",
+      "Recueils du jurisprudence du Québec: Cour supérieure": "C.S.",
+      "Supreme Court Reports": "!authority>>>S.C.R.",
+      "Territories Law Reports": "Terr. L.R.",
+      "Yukon Reports": "Y.R."
+    },
+    "institution-entire": {
+      "Federal Court": "!authority,jurisdiction>>>FC",
+      "Supreme Court": "!authority>>>SCC",
+      "Federal Court of Appeal": "!authority,jurisdiction>>>FCA"
+    },
+    "institution-part": {
+      "High Court": "HC",
+      "Supreme Court": "S.C.",
+      "Court of Appeal": "C.A.",
+      "District Court": "D.C.",
+      "High Court of Justice": "High Ct. J.",
+      "House of Lords": "H.L.",
+      "Privy Council": "P.C."
+    }
+  },
+  "ca;ab": {
+    "institution-entire": {
+      "Court of Appeal": "!authority,jurisdiction>>>ABCA",
+      "Court of Queen's Bench": "!authority,jurisdiction>>>ABQB",
+      "Provincial Court": "!authority,jurisdiction>>>ABPC"
+    }
+  },
+  "ca;bc": {
+    "institution-entire": {
+      "Supreme Court": "!authority,jurisdiction>>>BCSC",
+      "Court of Appeal": "!authority,jurisdiction>>>BCCA",
+      "Provincial Court": "!authority,jurisdiction>>>BCPC"
+    }
+  },
+  "ca;mb": {
+    "institution-entire": {
+      "Court of Appeal": "!authority,jurisdiction>>>MBCA",
+      "Court of Queen's Bench": "!authority,jurisdiction>>>MBQB",
+      "Provincial Court": "!authority,jurisdiction>>>MBPC"
+    }
+  },
+  "ca;nb": {
+    "institution-entire": {
+      "Court of Appeal": "!authority,jurisdiction>>>NBCA",
+      "Court of Queen's Bench": "!authority,jurisdiction>>>NBQC",
+      "Provincial Court": "!authority,jurisdiction>>>NBPC"
+    }
+  },
+  "ca;nl": {
+    "institution-entire": {
+      "Supreme Court|Court of Appeal": "!authority,jurisdiction>>>NFCA",
+      "Supreme Court|Trial Division": "!authority,jurisdiction>>>NFSCTD"
+    }
+  },
+  "ca;ns": {
+    "institution-entire": {
+      "Supreme Court": "!authority,jurisdiction>>>NSSC",
+      "Court of Appeal": "!authority,jurisdiction>>>NSCA",
+      "Provincial Court": "!authority,jurisdiction>>>NSPC",
+      "Supreme Court|Family Division": "!authority,jurisdiction>>>NSSF"
+    }
+  },
+  "ca;nt": {
+    "institution-entire": {
+      "Supreme Court": "!authority,jurisdiction>>>NWTSC",
+      "Court of Appeal": "!authority,jurisdiction>>>NWTCA",
+      "North West Territories|Territorial Court": "!authority,jurisdiction>>>NWTTC"
+    }
+  },
+  "ca;nu": {
+    "institution-entire": {
+      "Court of Appeal": "!authority,jurisdiction>>>NUCA",
+      "Court of Justice": "!authority,jurisdiction>>>NUCJ"
+    }
+  },
+  "ca;on": {
+    "container-title": {
+      "Ontario Reports Second": "!jurisdiction>>>O.R. (2d)"
+    },
+    "institution-entire": {
+      "Court of Appeal": "!authority,jurisdiction>>>ONCA",
+      "Court of Justice": "!authority,jurisdiction>>>ONCJ"
+    },
+    "institution-part": {
+      "High Court of Justice": "H Ct J"
+    }
+  },
+  "ca;pe": {
+    "institution-entire": {
+      "Supreme Court|Trial Division": "!authority,jurisdiction>>>PESCTD",
+      "Supreme Court|Appeal Division": "!authority,jurisdiction>>>PESCAD"
+    }
+  },
+  "ca;qc": {
+    "institution-entire": {
+      "Court of Appeal": "!authority,jurisdiction>>>QCCA",
+      "Court of Québec": "!authority,jurisdiction>>>QCCP",
+      "Superior Court": "!authority,jurisdiction>>>QCCS"
+    }
+  },
+  "ca;sk": {
+    "institution-entire": {
+      "Court of Appeal": "!authority,jurisdiction>>>SKCA",
+      "Court of Queen's Bench": "!authority,jurisdiction>>>SKQB",
+      "Provincial Court": "!authority,jurisdiction>>>SKPC"
+    }
+  },
+  "ca;yt": {
+    "institution-entire": {
+      "Supreme Court": "!authority,jurisdiction>>>YKSC",
+      "Court of Appeal": "!authority,jurisdiction>>>YKCA",
+      "Territorial Court": "!authority,jurisdiction>>>YKTC"
+    }
+  },
+  "gb": {
+    "container-title": {
+      "Family": "Fam",
+      "European Human Rights Reports": "E.H.R.R.",
+      "Family Law Reports": "F.L.R.",
+      "All England Law Reports": "All E.R.",
+      "All England Reports": "All E.R.",
+      "Appeal Cases": "A.C.",
+      "British Company Law Cases": "B.C.C.",
+      "Butterworths Medico-Legal Reports": "B.M.L.R.",
+      "Chancery": "Ch.",
+      "Common Market Law Reports": "C.M.L.R.",
+      "Criminal Appeal Reports": "Cr. App. R.",
+      "Criminal Appeal Reports (Sentencing)": "Cr. App. R. (S)",
+      "Current Law Yearbook": "C.L.Y.",
+      "English Reports": "E.R.",
+      "Estates Gazette": "E.G.",
+      "Estates Gazette Law Reports": "E.G.L.R.",
+      "European Court Reports": "E.C.R.",
+      "Financial Times Law Reports": "F.T.L.R.",
+      "Fleet Street Reports": "F.S.R.",
+      "Housing Law Reports": "H.L.R.",
+      "Industrial Cases Reports": "I.C.R.",
+      "Industrial Relations Law Reports": "I.R.L.R.",
+      "Justice of the Peace Reports": "J.P.",
+      "Landlord and Tenant Reports": "L. & T.R.",
+      "Law Society Gazette": "L.S. Gaz.",
+      "Lloyd's Law Reports": "Lloyd's Rep.",
+      "Local Government Reports": "L.G.R.",
+      "New Property Cases": "N.P.C.",
+      "Property and Compensation Reports": "P. & C.R.",
+      "Public and Third Sector Law Reports": "P.T.S.L.R.",
+      "Queen's Bench": "Q.B.",
+      "Rating and Valuation Reporter": "R.V.R.",
+      "Reports of Patent Cases": "R.P.C.",
+      "Road Traffic Reports": "R.T.R.",
+      "Scots Law Times": "S.L.T.",
+      "Scottish Civil Law Reports": "S.C.L.R.",
+      "Scottish Criminal Case Reports ": "S.C.C.R.",
+      "Session Cases": "S.C.",
+      "Simon's Tax Cases": "S.T.C.",
+      "Simon's Tax Intelligence": "S.T.I.",
+      "Tax Cases": "T.C.",
+      "Weekly Law Reports": "W.L.R.",
+      "Wills & Trusts Law Reports": "W.T.L.R.",
+      "The Times": "The Times"
+    },
+    "institution-entire": {
+      "Supreme Court": "UKSC",
+      "House of Lords": "UKHL",
+      "Privy Council": "UKPC",
+      "Administrative Appeals Chamber": "AAC",
+      "Asylum and Immigration Tribunal": "United Kingdom Asylum and Immigration Tribunal",
+      "Competition Appeals Tribunal": "United Kingdom Competition Appeals Tribunal",
+      "Employment Appeal Tribunal": "UKEAT",
+      "Financial Services and Markets Tribunals": "United Kingdom Financial Services and Markets Tribunals Decisions",
+      "First-tier Tribunal": "UKFTT",
+      "First-tier Tribunal|General Regulatory Chamber": "First-tier Tribunal (General Regulatory Chamber)",
+      "First-tier Tribunal|Tax": "First-tier Tribunal (Tax)",
+      "Health Education and Social Care Chamber": "HESC",
+      "High Court|Chancery": "UKHC",
+      "Information Tribunal and National Security Appeals Panel": "United Kingdom Information Tribunal including the National Security Appeals Panel",
+      "Nominet Dispute Resolution Service": "Nominet UK Dispute Resolution Service",
+      "Social Security and Child Support Commissioners": "UK Social Security and Child Support Commissioners' Decisions",
+      "Special Commissioners of Income Tax": "United Kingdom Special Commissioners of Income Tax Decisions",
+      "Special Immigrations Appeals Commission": "UKSIAC",
+      "Upper Tribunal|Administrative Appeals Chamber": "UKUT",
+      "Upper Tribunal|Immigration and Asylum Chamber": "Upper Tribunal (Immigration and Asylum Chamber)",
+      "Upper Tribunal|Lands Chamber": "Upper Tribunal (Lands Chamber)",
+      "Upper Tribunal|Tax and Chancery Chamber": "Upper Tribunal (Tax and Chancery Chamber)",
+      "VAT and Duties Tribunals": "United Kingdom VAT & Duties Tribunals Decisions",
+      "VAT and Duties Tribunals|Customs": "United Kingdom VAT & Duties Tribunals (Customs) Decisions",
+      "VAT and Duties Tribunals|Excise": "United Kingdom VAT & Duties Tribunals (Excise) Decisions",
+      "VAT and Duties Tribunals|Insurance Premium Tax": "United Kingdom VAT & Duties Tribunals (Insurance Premium Tax) Decisions",
+      "VAT and Duties Tribunals|Landfill Tax": "United Kingdom VAT & Duties Tribunals (Landfill Tax) Decisions"
+    },
+    "institution-part": {
+      "House of Lords": "HL",
+      "Chancery": "Ch",
+      "Queen's Bench": "QB",
+      "King's Bench": "KB"
+    },
+    "collection-title": {
+      "Command Papers 1987-present": "Cm"
+    }
+  },
+  "gb;england.and.wales": {
+    "container-title": {
+      "All England Reports": "All E.R."
+    },
+    "institution-entire": {
+      "High Court": "EWHC",
+      "High Court|Chancery": "EWHC",
+      "Administrative Court": "Admin",
+      "Care Standards Tribunal": "England and Wales Care Standards Tribunal Decisions",
+      "Chancery Division": "Ch",
+      "Commercial Court": "Comm",
+      "County Court|Family": "England and Wales County Court (Family)",
+      "County Court|Patents": "England and Wales Patents County Court Decisions",
+      "Court of Appeal|Civil Division": "EWCA Civ",
+      "Court of Appeal|Criminal Division": "EWCA Crim",
+      "England and Wales|Admiralty Division": "Admlty",
+      "Family Division": "Fam",
+      "Lands Tribunal": "England and Wales Lands Tribunal",
+      "Magistrates' Court|Family": "England and Wales Magistrates' Court (Family)",
+      "Patents Court": "Pat",
+      "Queen's Bench Division": "QB",
+      "Technology and Construction Court": "TCC"
+    },
+    "institution-part": {
+      "Court of Appeal": "CA",
+      "Chancery": "Ch",
+      "Queen's Bench": "QB"
+    }
+  },
+  "gb;northern.ireland": {
+    "institution-entire": {
+      "Court of Appeal": "NICA",
+      "Social Security and Child Support Commissioners": "Northern Ireland - Social Security and Child Support Commissioners' Decisions",
+      "Crown Court": "NICC",
+      "Fair Employment Tribunal": "Fair Employment Tribunal Northern Ireland Decisions",
+      "High Court|Chancery Division": "High Court of Justice in Northern Ireland Chancery Division Decisions",
+      "High Court|Family Division": "High Court of Justice in Northern Ireland Family Division Decisions",
+      "High Court|Masters": "High Court of Justice in Northern Ireland Master's Decisions",
+      "High Court|Queen's Bench Division": "NIQB",
+      "Industrial Tribunals": "Industrial Tribunals Northern Ireland Decisions"
+    }
+  },
+  "gb;scotland": {
+    "institution-entire": {
+      "High Court": "HCJT",
+      "Court of Session|Inner House": "CSIH",
+      "Court of Session|Outer House": "CSOH",
+      "Sheriff Court": "Scottish Sheriff Court Decisions"
+    }
+  },
+  "ie": {
+    "institution-entire": {
+      "High Court": "High Court of Ireland Decisions",
+      "Supreme Court": "Supreme Court of Ireland Decisions",
+      "Court of Criminal Appeal": "Irish Court of Criminal Appeal",
+      "Competition Authority": "Irish Competition Authority Decisions",
+      "Data Protection Commission": "Irish Data Protection Commission Case Studies",
+      "Information Commissioner": "Irish Information Commissioner's Decisions"
+    }
+  },
+  "nz": {
+    "container-title": {
+      "Environmental Law Reporter": "NZELR",
+      "Criminal Reports of New Zealand": "CRNZ",
+      "District Court Reports": "DCR",
+      "Employment Reports of New Zealand": "ERNZ",
+      "Environmental Law Reports of New Zealand": "ELRNZ",
+      "Family Reports of New Zealand": "FRNZ",
+      "Gazette Law Reports": "GLR",
+      "Human Rights Reports of New Zealand": "HRNZ",
+      "Land Valuation Casebook": "Land Valuation Casebook",
+      "Land Valuation Cases": "Land Valuation Cases",
+      "Macassey's Reports": "Mac",
+      "Magistrates' Court Reports": "MCR",
+      "Magistrates' Courts Decisions": "MCD",
+      "Maori Law Review": "Maori LR",
+      "Matrimonial Property Act Cases": "MPC",
+      "Morison's Company Law Reports": "MCLR",
+      "New Zealand Accident Compensation Reports": "NZACR",
+      "New Zealand Administrative Reports": "NZAR",
+      "New Zealand Arbitation Court Judgments": "ACJ",
+      "New Zealand Armed Forces Law Review": "NZAFLR",
+      "New Zealand Bill of Rights Reports": "NZBORR",
+      "New Zealand Business Law Cases": "NZBLC",
+      "New Zealand Business Law Cases Commerce Commission Decisions": "NZBLC (Com)",
+      "New Zealand Company Law Cases": "NZCLC",
+      "New Zealand Company and Commercial Law Reports": "NZCCLR",
+      "New Zealand Conveyancing Cases": "NZ ConvC",
+      "New Zealand Conveyancing and Property Reports": "NZCPR",
+      "New Zealand Courts Martial Appeal Reports": "NZCMAR",
+      "New Zealand Current Taxation": "New Zealand Current Taxation",
+      "New Zealand Customs Cases": "NZCC",
+      "New Zealand Employment Law Cases": "NZELC",
+      "New Zealand Employment Law Reports": "NZELR",
+      "New Zealand Environmental Law Reporter": "NZELR",
+      "New Zealand Family Law Reports": "NZFLR",
+      "New Zealand Industrial Court Judgments": "ICJ",
+      "New Zealand Industrial Law Reports": "NZILR",
+      "New Zealand Intellectual Property Reports": "NZIPR",
+      "New Zealand Jurist Reports (New Series)": "NZ Jur (NS)",
+      "New Zealand Law Reports": "NZLR",
+      "New Zealand Law Reports Leading Cases": "NZLRLC",
+      "New Zealand Parliamentary Debates": "NZPD",
+      "New Zealand Privy Council Cases": "NZPCC",
+      "New Zealand Procedural Cases": "NZPC",
+      "New Zealand Resource Management Appeals": "NZRMA",
+      "New Zealand Superannuation cases": "NZSC",
+      "New Zealand Tax Cases": "NZTC",
+      "New Zealand Taxation Board of Review Decisions": "NZTBR",
+      "New Zealand Town Planning Appeals": "NZTPA",
+      "New Zealand Town and Country Planning Appeals": "NZTCPA",
+      "Ollivier, Bell & Fitzgerald's Reports of Cases": "OB&F",
+      "Procedure Reports of New Zealand": "PRNZ",
+      "Tax Reports New Zealand": "Tax Reports New Zealand",
+      "Trade and Competition Law Reports": "TCLR"
+    },
+    "institution-entire": {
+      "High Court": "NZHC",
+      "Supreme Court": "NZSC",
+      "Court of Appeal": "NZCA",
+      "District Court": "NZDC"
+    },
+    "institution-part": {
+      "High Court": "H.C.",
+      "Supreme Court": "S.C.",
+      "Court of Appeal": "C.A.",
+      "District Court": "D.C.",
+      "House of Lords": "H.L.",
+      "Privy Council": "P.C."
+    }
+  },
+  "us;federal;ca.central": {
+    "place": {
+      "us;federal;ca.central": "C.D. Cal."
+    }
+  },
+  "us;federal;va.eastern": {
+    "place": {
+      "us;federal;va.eastern": "E.D. Va."
+    }
+  },
+  "us;federal;tx.northern": {
+    "place": {
+      "us;federal;tx.northern": "N.D. Tex."
+    }
+  },
+  "us;federal;9-cir": {
+    "place": {
+      "us;federal;9-cir": "9th Cir."
+    }
+  },
+  "us;federal;ar.eastern": {
+    "place": {
+      "us;federal;ar.eastern": "E.D. Ark."
+    }
+  },
+  "us;federal;mn": {
+    "place": {
+      "us;federal;mn": "D. Minn."
+    }
+  }
+}

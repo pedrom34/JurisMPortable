@@ -1,0 +1,100 @@
+content	zotero				jar:jurism.jar!/chrome/content/zotero/
+content	zotero-platform		jar:jurism.jar!/chrome/content/zotero-platform/mac/       os=Darwin
+content	zotero-platform		jar:jurism.jar!/chrome/content/zotero-platform/win/       os=WINNT
+content	zotero-platform		jar:jurism.jar!/chrome/content/zotero-platform/unix/      os=Linux
+content	zotero-platform		jar:jurism.jar!/chrome/content/zotero-platform/unix/      os=SunOS
+content	zotero-platform		jar:jurism.jar!/chrome/content/zotero-platform/unix/      os=FreeBSD
+content	zotero-platform		jar:jurism.jar!/chrome/content/zotero-platform/unix/      os=OpenBSD
+
+resource zotero				jar:jurism.jar!/resource/
+
+locale	zotero	en-US		jar:jurism.jar!/chrome/locale/en-US/zotero/
+#locale	zotero	af-ZA		jar:jurism.jar!/chrome/locale/af-ZA/zotero/
+locale	zotero	ar		jar:jurism.jar!/chrome/locale/ar/zotero/
+locale	zotero	bg-BG		jar:jurism.jar!/chrome/locale/bg-BG/zotero/
+locale	zotero	br		jar:jurism.jar!/chrome/locale/br/zotero/
+locale	zotero	ca-AD		jar:jurism.jar!/chrome/locale/ca-AD/zotero/
+locale	zotero	cs-CZ		jar:jurism.jar!/chrome/locale/cs-CZ/zotero/
+locale	zotero	da-DK		jar:jurism.jar!/chrome/locale/da-DK/zotero/
+locale	zotero	de		jar:jurism.jar!/chrome/locale/de/zotero/
+#locale	zotero	el-GR		jar:jurism.jar!/chrome/locale/el-GR/zotero/
+locale	zotero	en-GB		jar:jurism.jar!/chrome/locale/en-GB/zotero/
+locale	zotero	es-ES		jar:jurism.jar!/chrome/locale/es-ES/zotero/
+locale	zotero	et-EE		jar:jurism.jar!/chrome/locale/et-EE/zotero/
+#locale	zotero	eu-ES		jar:jurism.jar!/chrome/locale/eu-ES/zotero/
+locale	zotero	fa		jar:jurism.jar!/chrome/locale/fa/zotero/
+locale	zotero	fi-FI		jar:jurism.jar!/chrome/locale/fi-FI/zotero/
+locale	zotero	fr-FR		jar:jurism.jar!/chrome/locale/fr-FR/zotero/
+locale	zotero	gl-ES		jar:jurism.jar!/chrome/locale/gl-ES/zotero/
+#locale	zotero	he-IL		jar:jurism.jar!/chrome/locale/he-IL/zotero/
+#locale	zotero	hr-HR		jar:jurism.jar!/chrome/locale/hr-HR/zotero/
+locale	zotero	hu-HU		jar:jurism.jar!/chrome/locale/hu-HU/zotero/
+locale	zotero	id-ID		jar:jurism.jar!/chrome/locale/id-ID/zotero/
+locale	zotero	is-IS		jar:jurism.jar!/chrome/locale/is-IS/zotero/
+locale	zotero	it-IT		jar:jurism.jar!/chrome/locale/it-IT/zotero/
+locale	zotero	ja-JP		jar:jurism.jar!/chrome/locale/ja-JP/zotero/
+locale	zotero	km			jar:jurism.jar!/chrome/locale/km/zotero/
+locale	zotero	ko-KR		jar:jurism.jar!/chrome/locale/ko-KR/zotero/
+locale  zotero  lt-LT           jar:jurism.jar!/chrome/locale/lt-LT/zotero/
+#locale	zotero	mn-MN		jar:jurism.jar!/chrome/locale/mn-MN/zotero/
+#locale	zotero	nb-NO		jar:jurism.jar!/chrome/locale/nb-NO/zotero/
+#locale	zotero	nn-NO		jar:jurism.jar!/chrome/locale/nn-NO/zotero/
+locale	zotero	nl-NL		jar:jurism.jar!/chrome/locale/nl-NL/zotero/
+locale	zotero	pl-PL		jar:jurism.jar!/chrome/locale/pl-PL/zotero/
+locale	zotero	pt-BR		jar:jurism.jar!/chrome/locale/pt-BR/zotero/
+locale	zotero	pt-PT		jar:jurism.jar!/chrome/locale/pt-PT/zotero/
+locale	zotero	ro-RO		jar:jurism.jar!/chrome/locale/ro-RO/zotero/
+locale	zotero	ru-RU		jar:jurism.jar!/chrome/locale/ru-RU/zotero/
+locale	zotero	sk-SK		jar:jurism.jar!/chrome/locale/ru-RU/zotero/
+locale	zotero	sl-SI		jar:jurism.jar!/chrome/locale/sl-SI/zotero/
+locale	zotero	sr-RS		jar:jurism.jar!/chrome/locale/sr-RS/zotero/
+locale	zotero	sv-SE		jar:jurism.jar!/chrome/locale/sv-SE/zotero/
+locale	zotero	th-TH		jar:jurism.jar!/chrome/locale/th-TH/zotero/
+locale	zotero	tr-TR		jar:jurism.jar!/chrome/locale/tr-TR/zotero/
+locale	zotero	uk-UA		jar:jurism.jar!/chrome/locale/uk-UA/zotero/
+locale	zotero	vi-VN		jar:jurism.jar!/chrome/locale/vi-VN/zotero/
+locale	zotero	zh-CN		jar:jurism.jar!/chrome/locale/zh-CN/zotero/
+locale	zotero	zh-TW		jar:jurism.jar!/chrome/locale/zh-TW/zotero/
+
+skin	zotero	default		jar:jurism.jar!/chrome/skin/default/zotero/
+
+overlay	chrome://browser/content/browser.xul	chrome://zotero/content/overlay.xul
+
+style	chrome://browser/content/browser.xul	chrome://zotero/skin/zotero.css
+
+component	{8949be43-db0e-4c1b-b00b-13650b56a1f1}			components/zotero-service.js
+component	{6ea73a15-2a20-47b5-8fb4-059f9e4aa44b}			components/zotero-service.js
+contract	@zotero.org/Zotero;1 							{8949be43-db0e-4c1b-b00b-13650b56a1f1}
+contract	@mozilla.org/commandlinehandler/general-startup;1?type=zotero 	{6ea73a15-2a20-47b5-8fb4-059f9e4aa44b}
+category	command-line-handler 	m-zotero	 @mozilla.org/commandlinehandler/general-startup;1?type=zotero
+
+component	{8f90026f-17f9-4164-b81e-3475a771ae88}			components/zotero-autocomplete.js
+contract	@mozilla.org/autocomplete/search;1?name=jurism 	{8f90026f-17f9-4164-b81e-3475a771ae88}
+
+component	{25154cf8-9bb0-4a36-aff9-8674233da3f6}			components/zotero-protocol-handler.js
+contract	@mozilla.org/network/protocol;1?name=zotero 	{25154cf8-9bb0-4a36-aff9-8674233da3f6}
+
+# Scaffold
+content scaffold             jar:jurism.jar!/chrome/content/scaffold/
+locale  scaffold   en-US     jar:jurism.jar!/chrome/locale/en-US/scaffold/
+skin    scaffold   default   jar:jurism.jar!/chrome/skin/default/scaffold/
+
+locale	branding en-US		jar:jurism.jar!/chrome/branding/locale/
+content	branding			jar:jurism.jar!/chrome/branding/content/
+skin	browser				preferences		jar:jurism.jar!/chrome/skin/
+
+overlay chrome://mozapps/content/extensions/extensions.xul chrome://zotero/content/standalone/extensionsOverlay.xul
+overlay chrome://mozapps/content/update/updates.xul chrome://zotero/content/standalone/updatesOverlay.xul
+style	chrome://global/content/customizeToolbar.xul	chrome://zotero/skin/zotero.css
+
+component {2cd0c310-e127-44d0-88fc-4435c9ab4d4b} components/jsconsole-clhandler.js
+contract @mozilla.org/toolkit/console-clh;1 {2cd0c310-e127-44d0-88fc-4435c9ab4d4b}
+category command-line-handler t-jsconsole @mozilla.org/toolkit/console-clh;1
+override chrome://global/content/console.xul jar:jurism.jar!/chrome/console/console.xul
+override chrome://global/content/consoleBindings.xml jar:jurism.jar!/chrome/console/consoleBindings.xml
+override chrome://global/content/console.js jar:jurism.jar!/chrome/console/console.js
+override chrome://global/content/console.css jar:jurism.jar!/chrome/console/console.css
+override chrome://global/skin/console/console.css jar:jurism.jar!/chrome/console/skin/console.css
+override chrome://global/locale/console.dtd jar:jurism.jar!/chrome/console/locale/console.dtd
+override chrome://global/locale/console.properties jar:jurism.jar!/chrome/console/locale/console.properties
+

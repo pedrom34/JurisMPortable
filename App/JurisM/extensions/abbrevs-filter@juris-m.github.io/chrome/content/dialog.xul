@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://global/skin/dialog.css" type="text/css"?>
+<?xml-stylesheet href="chrome://abbrevs-filter/skin/zotero.css" type="text/css"?>
+<?xml-stylesheet href="chrome://abbrevs-filter/skin/overlay.css" type="text/css"?>
+<?xml-stylesheet href="chrome://abbrevs-filter-platform/content/overlay.css" type="text/css"?>
+<?xml-stylesheet href="chrome://abbrevs-filter/skin/integration.css" type="text/css"?>
+<!DOCTYPE window SYSTEM "chrome://abbrevs-filter/locale/dialog.dtd">
+
+<!-- windowtype="zotero:item-selector" -->
+
+<dialog
+	id="abbrevs-filter-dialog"
+	orient="vertical"
+	title="&abbrevs-filter.dialogTitle;"
+	width="800" height="500"
+	minwidth="800" minheight="500"
+	ondialogextra1="AbbrevsFilter.exportList(window, document);"
+	ondialogextra2="Abbrevs_Filter_Dialog.importFunc(window, document);"
+    buttonlabelcancel="Close"
+    buttonlabelextra1="&abbrevs-filter.exportButtonLabel;"
+    buttonlabelextra2="&abbrevs-filter.importButtonLabel;"
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+	persist="screenX screenY width height"
+	resizable="true"
+	onload="Abbrevs_Filter_Dialog.init();"
+	buttons="cancel,extra1,extra2">
+
+  <groupbox orient="vertical">
+    <!-- style name -->
+    <caption label="Style"/>
+    <label id="abbrevs-filter-list-title"/>
+    <label id="abbrevs-filter-list-name" hidden="true"/>
+  </groupbox>
+
+  <groupbox>
+    <!-- jurisdiction setting -->
+    <caption label="Suppress Jurisdiction Names"/>
+    <hbox>
+      <vbox>
+        <textbox id="suppression-autocomplete" 
+                 placeholder="Choose a country name"
+                 type="autocomplete" 
+                 autocompletesearch="jurism" 
+                 autocompletesearchparam='{"fieldName":"countries"}'
+                 completeselectedindex="true"
+                 ontextentered="Abbrevs_Filter_Dialog.handleJurisdictionAutoCompleteSelect(this);"/>
+        <hbox flex="1"/>
+      </vbox>
+      <hbox flex="1" id="suppression-list" style="display:block;word-wrap:break-word;"/>
+    </hbox>
+  </groupbox>
+
+  <groupbox orient="vertical" flex="1">
+    <!-- lists -->
+    <caption label="Lists"/>
+    <button id="abbrevs-filter-category-menu"/>
+    <vbox flex="1" style="overflow:auto;">
+      <grid>
+        <columns>
+          <column flex="1"/>
+          <column flex="2"/>
+          <column flex="3"/>
+        </columns>
+        <rows id="abbrevs-filter-abbrevs-list">
+        </rows>
+      </grid>
+    </vbox>
+  </groupbox>
+  
+  <vbox>
+    <hbox>
+      <vbox>
+        <hbox flex="1"/>
+        <label id="switch-source" style="font-weight:bold;cursor:pointer;border:1px solid #bbbbbb;border-radius:4px;padding:4px;" value="Import from defaults"/>
+        <hbox flex="1"/>
+      </vbox>
+      <menulist flex="1" id="resource-list-menu">
+        <menupopup id="resource-list-popup">
+          <menuitem value="" label="Select a resource"/>
+        </menupopup>
+      </menulist>
+      <textbox flex="1" placeholder="Click to select a file" id="file-for-import" type="text" onclick="Abbrevs_Filter_Dialog.importChooseSourceFile();" hidden="true"/>
+    </hbox>
+    <hbox>
+      <radiogroup orient="horizontal" id="abbrevs-filter-import-options">
+        <radio label="&abbrevs-filter.importRadioFillGaps;"/>
+        <radio label="&abbrevs-filter.importRadioOverrideLocal;"/>
+        <radio label="&abbrevs-filter.importRadioReplaceLocal;"/>
+      </radiogroup>
+      <hbox flex="1"/>
+    </hbox>
+	<progressmeter hidden="true" mode="determined" id="import-progress"/>
+  </vbox>
+
+  <script src="dialog.js"/>
+
+</dialog>

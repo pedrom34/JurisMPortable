@@ -1,0 +1,30 @@
+{
+  "name": "zotero-odf-scan-plugin",
+  "version": "2.0.43",
+  "description": "Zotero ODF Scan",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "build": "./build.py",
+    "postversion": "./build.py --release",
+    "release": "./release.sh",
+    "test": "eslint --fix bootstrap.js chrome/content/*.js 'resource/translators/Scannable Cite.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Juris-M/zotero-odf-scan-plugin.git",
+    "organisation": "Juris-M",
+    "repo": "zotero-odf-scan-plugin"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Juris-M/zotero-odf-scan-plugin/issues"
+  },
+  "homepage": "https://github.com/Juris-M/zotero-odf-scan-plugin#readme",
+  "devDependencies": {
+    "eslint": "^5.9.0",
+    "eslint-plugin-local": "^1.0.0"
+  }
+}

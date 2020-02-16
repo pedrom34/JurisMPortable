@@ -1,0 +1,11 @@
+content	abbrevs-filter	chrome/content/
+content	abbrevs-filter-platform		chrome/content/abbrevs-filter-platform/mac/       os=Darwin
+content	abbrevs-filter-platform		chrome/content/abbrevs-filter-platform/win/       os=WINNT
+content	abbrevs-filter-platform		chrome/content/abbrevs-filter-platform/unix/      os=Linux
+content	abbrevs-filter-platform		chrome/content/abbrevs-filter-platform/unix/      os=SunOS
+content	abbrevs-filter-platform		chrome/content/abbrevs-filter-platform/unix/      os=FreeBSD
+content	abbrevs-filter-platform		chrome/content/abbrevs-filter-platform/unix/      os=OpenBSD
+skin	abbrevs-filter   default   chrome/skin/default/abbrevs-filter/
+locale    abbrevs-filter   en-US         chrome/locale/en-US/
+resource  abbrevs-filter   resource/
+

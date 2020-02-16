@@ -1,0 +1,240 @@
+/*
+ As of Fx36, the built-in styles don't properly handle a menu-button within combined buttons.
+*/
+#zotero-toolbar-main-button-single[cui-areatype="toolbar"] .toolbarbutton-icon {
+	width: 32px;
+}
+
+#zotero-toolbar-save-button-single[cui-areatype="toolbar"] .toolbarbutton-icon {
+	width: 30px;
+}
+
+#zotero-toolbar-main-button[cui-areatype="toolbar"] .toolbarbutton-icon,
+#zotero-toolbar-save-button[cui-areatype="toolbar"] .toolbarbutton-icon {
+	width: 28px;
+}
+
+#zotero-toolbar-main-button[cui-areatype="toolbar"] {
+	margin-right: -1px !important;
+}
+
+#zotero-toolbar-main-button[cui-areatype="toolbar"] .toolbarbutton-icon {
+	margin-left: 2px;
+	margin-right: -1px;
+	padding-left: 5px !important;
+	padding-right: 5px !important;
+}
+
+#zotero-toolbar-save-button[cui-areatype="toolbar"] .toolbarbutton-icon {
+	padding-left: 6px !important;
+	padding-right: 6px !important;
+}
+
+#zotero-toolbar-save-button[cui-areatype="toolbar"] > .toolbarbutton-menubutton-dropmarker .dropmarker-icon {
+	padding-left: 5px !important;
+	padding-right: 4px !important;
+}
+
+#zotero-toolbar-save-button[cui-areatype="toolbar"] .toolbarbutton-menubutton-button {
+	margin-left: -2px !important;
+}
+
+#zotero-toolbar-buttons[cui-areatype="toolbar"] > separator,
+#zotero-toolbar-buttons[cui-areatype="toolbar"] > #zotero-toolbar-save-button > .toolbarbutton-menubutton-dropmarker::before {	
+	width: 1px;
+	-moz-margin-end: -1px;
+	background-image: var(--toolbarbutton-combined-backgroundimage);
+}
+
+#zotero-toolbar-buttons[cui-areatype="toolbar"] > separator {
+	margin-top: 11px;
+	margin-bottom: 11px;
+}
+
+
+#zotero-toolbar-buttons[cui-areatype="toolbar"]:hover > separator,
+#zotero-toolbar-buttons[cui-areatype="toolbar"]:hover > #zotero-toolbar-save-button:not([disabled]) > .toolbarbutton-menubutton-dropmarker::before {
+	display: none;
+}
+
+#zotero-toolbar-buttons[cui-areatype="toolbar"]:hover > #zotero-toolbar-main-button .toolbarbutton-icon,
+#zotero-toolbar-buttons[cui-areatype="toolbar"]:hover > #zotero-toolbar-save-button:not([disabled]) .toolbarbutton-icon,
+#zotero-toolbar-buttons[cui-areatype="toolbar"]:hover > #zotero-toolbar-save-button:not([disabled]) .dropmarker-icon {
+	border-color: var(--toolbarbutton-hover-bordercolor) !important;
+}
+
+#zotero-toolbar-buttons[cui-areatype="toolbar"]:hover > #zotero-toolbar-main-button:not(:active) .toolbarbutton-icon,
+#zotero-toolbar-buttons[cui-areatype="toolbar"]:hover:not([disabled]) > #zotero-toolbar-save-button:not(:active) .toolbarbutton-icon,
+#zotero-toolbar-buttons[cui-areatype="toolbar"]:hover:not([disabled]) > #zotero-toolbar-save-button:not(:active) .dropmarker-icon {
+	background: var(--toolbarbutton-hover-background);
+}
+
+#zotero-toolbar-buttons[cui-areatype="toolbar"]:hover > #zotero-toolbar-save-button .toolbarbutton-icon,
+#zotero-toolbar-buttons[cui-areatype="toolbar"]:hover > #zotero-toolbar-save-button .dropmarker-icon {
+	box-shadow: none;
+}
+
+/*
+ There are two hover effects: when the toolbaritem is hovered over, and when the button is hovered over.
+ This applies the latter (and may not be right on different versions of Windows).
+*/
+#zotero-toolbar-buttons[cui-areatype="toolbar"] > #zotero-toolbar-main-button:hover:not(:active):not([disabled]) > .toolbarbutton-icon,
+/*
+ The dropmarker doesn't honor :hover, so instead of showing the hover effect for each segment individually, do the
+ menu-button parts together, which at least looks like a choice.
+*/
+#zotero-toolbar-buttons[cui-areatype="toolbar"] > #zotero-toolbar-save-button:hover .toolbarbutton-menubutton-button .toolbarbutton-icon,
+#zotero-toolbar-buttons[cui-areatype="toolbar"] > #zotero-toolbar-save-button:hover:not(:active):not([disabled]) .toolbarbutton-menubutton-dropmarker .dropmarker-icon {
+    background-color: hsla(210,48%,96%,.75) !important;
+}
+#zotero-toolbar-buttons[cui-areatype="toolbar"] > #zotero-toolbar-main-button:hover > .toolbarbutton-icon,
+#zotero-toolbar-buttons[cui-areatype="toolbar"] > #zotero-toolbar-save-button:hover:not([disabled]) .toolbarbutton-menubutton-button .toolbarbutton-icon,
+#zotero-toolbar-buttons[cui-areatype="toolbar"] > #zotero-toolbar-save-button:hover:not([disabled]) .toolbarbutton-menubutton-dropmarker .dropmarker-icon {
+    border-color: hsla(210,54%,20%,.3) hsla(210,54%,20%,.35) hsla(210,54%,20%,.4) !important;
+    box-shadow: 0 0 1px hsla(210,54%,20%,.03),
+                0 0 2px hsla(210,54%,20%,.1) !important;
+}
+
+#zotero-toolbar-buttons[cui-areatype="toolbar"] > #zotero-toolbar-save-button:hover:active:not([open]):not([disabled]) .toolbarbutton-menubutton-button .toolbarbutton-icon,
+#zotero-toolbar-buttons[cui-areatype="toolbar"] > #zotero-toolbar-save-button:hover[open]:not([disabled]) .toolbarbutton-menubutton-dropmarker .dropmarker-icon {
+  background: var(--toolbarbutton-active-background);
+  border-color: var(--toolbarbutton-active-bordercolor);
+  box-shadow: var(--toolbarbutton-active-boxshadow);
+  transition-duration: 10ms;
+}
+
+#zotero-toolbar-save-button[cui-areatype="toolbar"] > menupopup {
+	margin-top: -5px;
+}
+/* End toolbar buttons */
+
+@media (min-resolution: 1.5dppx) {
+	#zotero-toolbar .toolbarbutton-icon {
+		width: 16px;
+	}
+	
+	#zotero-tb-sync > .toolbarbutton-icon {
+		width: 20px;
+	}
+}
+
+#zotero-tb-search-menu-button {
+	margin: 0 -1px 0 -4px;
+	border: 0;
+	background: transparent;
+	/* Mozilla file copied from chrome://browser/skin/mainwindow-dropdown-arrow.png
+	   for availability in Standalone */
+	list-style-image: url("chrome://zotero/skin/win/mainwindow-dropdown-arrow.png");
+	-moz-image-region: rect(0, 13px, 11px, 0);
+}
+
+#zotero-tb-search-menu-button .button-menu-dropmarker {
+	display: none;
+}
+
+#zotero-tb-search-menu-button:hover:active,
+#zotero-tb-search-menu-button[open="true"] {
+	-moz-image-region: rect(0, 26px, 11px, 13px);
+}
+
+#zotero-tb-search .textbox-search-icon {
+	visibility: hidden;
+}
+
+#zotero-tb-sync-error {
+	margin-right: 4px;
+	padding-top: 4px;
+}
+
+#zotero-tb-sync {
+	margin-right: 1px;
+	padding-top: 4px;
+}
+
+#zotero-tb-fullscreen {
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+#zotero-view-tabbox tab {
+	padding-left: .7em;
+	padding-right: .7em;
+}
+
+#zotero-toolbar {
+	-moz-appearance: toolbox !important;
+	padding-left: 2px;
+}
+
+#zotero-toolbar:-moz-system-metric(windows-compositor) {
+	-moz-appearance: none !important;
+	background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+	background-color: rgb(207, 219, 236) !important;
+	border-width: 0 0 1px 0;
+	border-style: solid;
+	border-color: #818790;
+}
+
+#zotero-collections-tree, #zotero-items-tree, #zotero-view-item {
+	-moz-appearance: none;
+	border-style: solid;
+	border-color: #818790;
+	margin: 0;
+	padding: 0;
+	-moz-border-top-colors: none;
+	-moz-border-bottom-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-left-colors: none;
+}
+
+/* Undo tree row spacing change in Fx25 on Windows */
+#zotero-collections-tree treechildren::-moz-tree-row,
+#zotero-items-tree treechildren::-moz-tree-row,
+#zotero-prefs treechildren::-moz-tree-row {
+	height: 1.6em;
+}
+
+#zotero-collections-tree {
+	border-width: 0 1px 1px 0;
+}
+
+/* Restore row highlighting on drag over, though I'm not sure how we're losing it to begin with. */
+#zotero-collections-tree treechildren::-moz-tree-row(dropOn) {
+	background-color: Highlight;
+}
+
+#zotero-items-tree {
+	border-width: 0 1px;
+}
+
+#zotero-view-item {
+	padding: 0 !important;
+	-moz-appearance: none;
+	background-color: -moz-field;
+	border-width: 1px 0 0  1px;
+}
+
+#zotero-view-tabbox > tabs {
+	margin-top: 2px;
+}
+
+#zotero-item-pane-groupbox {
+	-moz-appearance: none !important;
+	border-radius: 0;
+	border-width: 0 0 0 1px;
+	border-color: #818790;
+	border-style: solid;
+}
+
+#zotero-editpane-item-box > scrollbox, #zotero-view-item > tabpanel > vbox, 
+#zotero-editpane-tags > scrollbox, #zotero-editpane-related {
+	padding-top: 5px;
+}
+
+#zotero-editpane-tags > scrollbox {
+	padding-left: 5px;
+}
+
+#zotero-view-item > tabpanel > vbox {
+	padding-left: 5px;
+}
