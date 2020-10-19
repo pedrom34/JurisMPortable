@@ -66,6 +66,8 @@ ZoteroAutoComplete.prototype.startSearch = Zotero.Promise.coroutine(function* (s
 
   var resultsCallback;
 
+  var locale = Zotero.locale ? Zotero.locale.slice(0, 2) : "en";
+
   switch (fieldName) {
     case '':
       break;
@@ -95,10 +97,11 @@ ZoteroAutoComplete.prototype.startSearch = Zotero.Promise.coroutine(function* (s
       'ELSE jurisdictionName ' +
       'END as val,' +
       'jurisdictionID as comment ' +
-      'FROM jurisdictions ' +
-      'WHERE jurisdictionName LIKE ? ORDER BY segmentCount,jurisdictionIdx ' +
-      'LIMIT 100;';
-      var sqlParams = ['%' + searchString + '%'];
+      'FROM (SELECT * FROM jurisdictions LEFT JOIN uiLanguages USING(langIdx) WHERE lang=? OR lang IS NULL ORDER BY lang) ' +
+      'WHERE jurisdictionName LIKE ? ' +
+      'GROUP BY jurisdictionID ' +
+      'ORDER BY segmentCount,jurisdictionIdx ';
+      var sqlParams = [locale, '%' + searchString + '%'];
       //statement = this._zotero.DB.getStatement(sql, sqlParams);
       break;
 
@@ -108,8 +111,7 @@ ZoteroAutoComplete.prototype.startSearch = Zotero.Promise.coroutine(function* (s
       'FROM jurisdictions ' +
       "WHERE jurisdictionID NOT LIKE ? " +
       'AND jurisdictionName LIKE ? ' +
-      'GROUP BY jurisdictionID ' +
-      'LIMIT 100;';
+      'GROUP BY jurisdictionID ';
       var sqlParams = ['%:%', searchString + '%'];
       //statement = this._zotero.DB.getStatement(sql, sqlParams);
       break;
@@ -123,20 +125,17 @@ ZoteroAutoComplete.prototype.startSearch = Zotero.Promise.coroutine(function* (s
       'THEN courtName ' +
       'ELSE substr(JU.jurisdictionName,?) || ": " || courtName ' +
       'END as val,' +
-      'courtID as comment FROM jurisdictions JU ' +
-      'JOIN courtJurisdictionLinks CJL USING(jurisdictionIdx) ' +
+      'courtID as comment FROM (SELECT * FROM (SELECT * FROM jurisdictions LEFT JOIN uiLanguages USING(langIdx) WHERE lang=? OR lang IS NULL ORDER BY lang) GROUP BY jurisdictionID) JU ' +
+      'JOIN jurisdictionCourts JC USING(jurisdictionIdx) ' +
       'JOIN courts USING(courtIdx) ' +
-      'JOIN countryCourtLinks CCL USING (countryCourtLinkIdx) ' +
-      'JOIN courtNames CN USING (courtNameIdx) ' +
-      'JOIN jurisdictions CO ON CO.jurisdictionIdx=CCL.countryIdx ' +
-      'WHERE CO.jurisdictionID=? AND JU.jurisdictionName LIKE ? AND (JU.jurisdictionName LIKE ? OR courtName LIKE ?) ' +
-      'ORDER BY JU.segmentCount,CJL.jurisdictionIdx ';
-      +'LIMIT 100;';
+      'WHERE (jurisdictionID=?  OR jurisdictionID LIKE ?) AND (JU.jurisdictionName LIKE ? OR courtName LIKE ?) ' +
+      'ORDER BY JU.segmentCount,jurisdictionID ';
       var sqlParams = [
       paramSegs,
       paramChop,
-      searchParams.countryID,
-      searchParams.jurisdictionName + '%',
+      locale,
+      searchParams.jurisdictionID,
+      searchParams.jurisdictionID + ':%',
       '%' + searchString + '%',
       '%' + searchString + '%'];
 

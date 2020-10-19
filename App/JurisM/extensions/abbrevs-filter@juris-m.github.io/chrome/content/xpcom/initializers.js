@@ -62,6 +62,7 @@ try {
 			yield this.setDBVersion('abbreviations', version);
 		}.bind(this));
 	} else {
+		
 		yield this.db.executeTransaction(function* () {
 			var dbVersion = yield this.getDBVersion('abbreviations');
 			if (version > dbVersion) {
@@ -72,9 +73,42 @@ try {
 					
 					for (var i=dbVersion,ilen=version+1;i<ilen;i+=1) {
 						// Next version
-						// if (i === 15) {
-						//   Do stuff
-						//}
+						if (i === 16) {
+							// Create table to hold domain labels
+							var sql = "CREATE TABLE IF NOT EXISTS domains (domainIdx INTEGER PRIMARY KEY, domain TEXT NOT NULL, UNIQUE (domainIdx, domain))";
+							yield this.db.queryAsync(sql);
+							// Insert default value
+							var sql = "INSERT INTO domains VALUES (0, 'default')";
+							yield this.db.queryAsync(sql);
+							
+							// Create abbreviations table with new format
+							var sql = "CREATE TABLE new_abbreviations (abbreviationIdx INTEGER PRIMARY KEY, listID INTEGER, jurisdictionID INTEGER, categoryID INTEGER, rawID INTEGER, abbrID INTEGER, domainIdx TEXT DEFAULT 0 REFERENCES domains (domainIdx), UNIQUE (listID, jurisdictionID, categoryID, rawID, domainIdx));";
+							yield this.db.queryAsync(sql);
+
+							// Copy content to new-format table
+							var sql = "INSERT INTO new_abbreviations SELECT * FROM abbreviations";
+							yield this.db.queryAsync(sql);
+
+							// Turn off foreign keys, just in case
+							var sql = "PRAGMA foreign_keys=OFF";
+							yield this.db.queryAsync(sql);
+
+							// Drop old table
+							var sql = "DROP TABLE abbreviations";
+							yield this.db.queryAsync(sql);
+
+							// Rename table
+							var sql = "ALTER TABLE new_abbreviations RENAME TO abbreviations";
+							yield this.db.queryAsync(sql);
+
+							// Create an index
+							var sql = "CREATE INDEX abbreviations_listID ON abbreviations(listID, jurisdictionID, categoryID, rawID, domainIdx);";
+							yield this.db.queryAsync(sql);
+
+							// Reenable foreign key constraints
+							var sql = "PRAGMA foreign_keys=ON";
+							yield this.db.queryAsync(sql);
+						}
 					}
 					yield this.setDBVersion('abbreviations', version);
 					

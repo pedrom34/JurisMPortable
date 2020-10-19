@@ -199,31 +199,29 @@ function domListener (event) {
 			var button = doc.createElement("button");
 			button.setAttribute("type", "button");
 			button.setAttribute("label", "Abbrevs.");
-			//button.setAttribute("image", "chrome://zotero/skin/abbrevs-button.png");
-			button.setAttribute("margin", "0 0 0 0");
-			button.setAttribute("padding", "0 0 0 0");
 			button.setAttribute("id", "abbrevs-button");
-			button.addEventListener("command", abbrevsPopup);
 			button.setAttribute("disabled", "true");
+			button.setAttribute("tooltiptext", "Close and refresh to enable Abbrevs");
 			bx.appendChild(button);
 			return bx;
 		}
 
 		function attachButton() {
+			var bx = makeButtonBox();
 			var dialog = doc.getElementById("zotero-add-citation-dialog");
 			if (dialog) {
 				var vbox = doc.getElementById("zotero-select-items-container");
-				var bx = makeButtonBox();
 				dialog.insertBefore(bx, vbox);
 			} else {
 				var spinner = doc.getElementById("quick-format-spinner");
-				var bx = makeButtonBox();
-				bx.setAttribute("style", "margin-top: -3px;height: 18px;");
+				bx.setAttribute("style", "border:1px solid #ffffff;line-height:normal;display:inline-block;");
 				spinner.parentNode.insertBefore(bx, null);
 			}
 			if (processorIsLoaded()) {
 				var button = doc.getElementById("abbrevs-button");
 				button.removeAttribute("disabled");
+				button.removeAttribute("tooltiptext");
+				button.addEventListener("click", abbrevsPopup);
 			}
 		}
 		attachButton();

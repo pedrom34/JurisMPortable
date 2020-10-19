@@ -1,4 +1,11 @@
--- 15
+-- 16
+
+DROP TABLE IF EXISTS domains;
+CREATE TABLE domains (
+   domainIdx INTEGER PRIMARY KEY,
+   domain TEXT NOT NULL,
+   UNIQUE (domainIdx, domain)
+);
 
 DROP TABLE IF EXISTS suppressme;
 CREATE TABLE suppressme (
@@ -16,7 +23,8 @@ CREATE TABLE abbreviations (
    categoryID INTEGER,
    rawID INTEGER,
    abbrID INTEGER,
-   UNIQUE (listID, jurisdictionID, categoryID, rawID)
+   domainIdx TEXT REFERENCES domains (domainIdx),
+   UNIQUE (listID, jurisdictionID, categoryID, rawID, domainIdx)
 );
 CREATE INDEX abbreviations_listID ON abbreviations(listID);
 CREATE INDEX abbreviations_jurisdictionID ON abbreviations(jurisdictionID);

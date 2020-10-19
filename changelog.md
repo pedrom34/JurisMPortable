@@ -1,5 +1,9 @@
 Versions history:
 ----
+- 2020-10-19. Version 5.0.90m6 - Development Test 7: update to 5.0.90m6.
+  
+- 2020-04-21. Version 5.0.85m3 - Development Test 7: update to 5.0.85m3.
+  
 - 2020-04-21. Version 5.0.85m2 - Development Test 6: update to 5.0.85m2.
   
 - 2020-03-25. Version 5.0.85m1 - Development Test 5: update to 5.0.85m1.

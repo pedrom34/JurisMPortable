@@ -6,7 +6,7 @@ Components.utils.import("resource://gre/modules/Services.jsm");
 var Abbrevs_Filter_Dialog = new function () {
 
     this.importChooseSourceFile = importChooseSourceFile;
-	this.importFunc = importFunc;
+    this.importFunc = importFunc;
 
     // Strings and things.
     var stringBundle = Components.classes["@mozilla.org/intl/stringbundle;1"]
@@ -21,7 +21,7 @@ var Abbrevs_Filter_Dialog = new function () {
     var io = window.arguments[0].wrappedJSObject;
 
     this.handleJurisdictionAutoCompleteSelect = handleJurisdictionAutoCompleteSelect;
-	this.init = init;
+    this.init = init;
 
     var style = io.style;
     var transform = io.style.transform;
@@ -29,7 +29,7 @@ var Abbrevs_Filter_Dialog = new function () {
     var listTitle = style.opt.styleName ? style.opt.styleName : style.opt.styleID;
 
     var AFZ = io.AFZ;
-	AFZ.transform = transform;
+    AFZ.transform = transform;
     // Used by import, export
     AFZ.styleID = styleID;
     var Zotero = AFZ.Zotero;
@@ -45,24 +45,24 @@ var Abbrevs_Filter_Dialog = new function () {
     var openFieldParent = null;
 
     function init () {
-		Zotero.Promise.spawn(function* () {
-			setTitle(styleID, listTitle);
-		
-			populateCategoryMenu();
-			setupCurrentCategoryList(category);
-			
-			buildResourceList();
-			setImportSourceSelect();
-			
-			/*
-			 * Jurisdiction suppression UI initialization
-			 */
-			
-			for (var jurisdictionCode in io.style.opt.suppressedJurisdictions) {
-				yield setJurisdictionNode(jurisdictionCode, io.style.opt.suppressedJurisdictions[jurisdictionCode]);
-			}
-		}, this);
-	}
+        Zotero.Promise.spawn(function* () {
+            setTitle(styleID, listTitle);
+        
+            populateCategoryMenu();
+            setupCurrentCategoryList(category);
+            
+            buildResourceList();
+            setImportSourceSelect();
+            
+            /*
+             * Jurisdiction suppression UI initialization
+             */
+            
+            for (var jurisdictionCode in io.style.opt.suppressedJurisdictions) {
+                yield setJurisdictionNode(jurisdictionCode, io.style.opt.suppressedJurisdictions[jurisdictionCode]);
+            }
+        }, this);
+    }
 
     function setTitle(styleID, listTitle) {
         var listNameNode = document.getElementById("abbrevs-filter-list-name");
@@ -90,7 +90,7 @@ var Abbrevs_Filter_Dialog = new function () {
         }
         categoryMenu.appendChild(categorymenupopup);
     }
-	
+    
     function setCurrentCategory(category) {
         prefs.setCharPref("currentCategory", category);
         var categoryMenu = document.getElementById("abbrevs-filter-category-menu");
@@ -144,28 +144,28 @@ var Abbrevs_Filter_Dialog = new function () {
         }
     }
 
-	function sorter(a, b) {
-		if (a[1] > b[1]) {
-			return 1
-		} else if (a[1] < b[1]) {
-			return -1
-		} else {
-			// "default" at top, then in order of ascending length
-			if (a[0] === b[0]) {
-				return 0;
-			} else if (a[0] === "default") {
-				return -1;
-			} else if (b[0] === "default") {
-				return 1;
-			} else if (a[0] > b[0]) {
-				return 1;
-			} else if (a[0] < b[0]) {
-				return -1;
-			} else {
-				return 0;
-			}
-		}
-	}
+    function sorter(a, b) {
+        if (a[1] > b[1]) {
+            return 1
+        } else if (a[1] < b[1]) {
+            return -1
+        } else {
+            // "default" at top, then in order of ascending length
+            if (a[0] === b[0]) {
+                return 0;
+            } else if (a[0] === "default") {
+                return -1;
+            } else if (b[0] === "default") {
+                return 1;
+            } else if (a[0] > b[0]) {
+                return 1;
+            } else if (a[0] < b[0]) {
+                return -1;
+            } else {
+                return 0;
+            }
+        }
+    }
 
     function getAbbreviationKeys(category) {
         var keys = [];
@@ -173,8 +173,10 @@ var Abbrevs_Filter_Dialog = new function () {
             for (var key in transform.abbrevs[jurisdiction][category]) {
                 // Remap hereinafter key here
                 if ("hereinafter" === category) {
+                    // Value of "key" received on "hereinafter" abbrev is Item.id
                     var entryItem = Zotero.Items.get(key);
-                    key = (entryItem.libraryID ? entryItem.libraryID : 0) + "_" + entryItem.key;
+                    // Value of "key" is now <libraryID>/<item hash key>
+                    key = entryItem.libraryKey;
                 }
                 keys.push([jurisdiction, key]);
             }
@@ -240,29 +242,34 @@ var Abbrevs_Filter_Dialog = new function () {
         
         // Jurisdiction
         var rawlabel = document.createElement("label");
-		var jurisdictionName = Zotero.CachedJurisdictionData.jurisdictionNameFromId(jurisdictionCode);
+        var jurisdictionName = Zotero.CachedJurisdictionData.jurisdictionNameFromId(jurisdictionCode);
         rawlabel.setAttribute("value", jurisdictionName);
         rawlabel.setAttribute("crop", "end");
-		if (jurisdictionName === "default") {
-			rawlabel.setAttribute("style", "font-weight:bold;visibility:hidden;");
-		} else {
-			rawlabel.setAttribute("style", "font-size:smaller;");
-		}
+        if (jurisdictionName === "default") {
+            rawlabel.setAttribute("style", "font-weight:bold;visibility:hidden;");
+        } else {
+            rawlabel.setAttribute("style", "font-size:smaller;");
+        }
         //rawlabel.setAttribute("width", "100");
         //rawlabel.setAttribute("tooltiptext", jurisdiction);
         row.appendChild(rawlabel);
 
         // Category
         addHiddenNode(row, category);
-
         // Raw (key)
         var rawbox = document.createElement("description");
         // Show displayTitle if hereinafter
+        // HACK ALERT, this variable is used in two separate blocks below
+        var hereinafterItem = null;
         if ("hereinafter" === category) {
-            var entryItem = Zotero.Items.parseLibraryKeyHash(key)
-            entryItem = Zotero.Items.getByLibraryAndKey(entryItem.libraryID, entryItem.key);
-            var displayTitle = entryItem.getDisplayTitle(true);
+            // For "hereinafter" category, getAbbreviationKeys has transformed "key" from Item.id to Item.libraryKey,
+            // a Zotero value combining combining library ID and item hash key in a single string.
+            // We memo that here.
             rawbox.setAttribute("system_id", key);
+            // 
+            var { libraryID, key } = Zotero.Items.parseLibraryKey(key);
+            hereinafterItem = Zotero.Items.getByLibraryAndKey(libraryID, key);
+            var displayTitle = hereinafterItem.getDisplayTitle(true);
             rawbox.setAttribute("value", displayTitle);
         } else if ("place" === category && key === key.toUpperCase()) {
             var humanForm = style.sys.getHumanForm(key.toLowerCase(), false, true);
@@ -288,13 +295,8 @@ var Abbrevs_Filter_Dialog = new function () {
         abbrevbox.setAttribute("class", "zotero-clicky");
         // Remap hereinafter key here
         if ("hereinafter" === category) {
-            var entryItem = Zotero.Items.parseLibraryKeyHash(key);
-            if (entryItem) {
-                entryItem = Zotero.Items.getByLibraryAndKey(entryItem.libraryID, entryItem.key);
-            } else {
-                entryItem = Zotero.Items.get(key);
-            }
-            key = entryItem.id;
+            // Change "key" of "hereinafter" item back to Item.id
+            key = hereinafterItem.id;
         }
         abbrevbox.setAttribute("value", transform.abbrevs[jurisdictionCode][category][key]);
         //abbrevbox.setAttribute("flex", "1");
@@ -404,46 +406,46 @@ var Abbrevs_Filter_Dialog = new function () {
     }
 
     function blurHandler(event) {
-		Zotero.Promise.spawn(function* () {
-			var row = event.currentTarget.parentNode;
-			var data = readDataFromOpenRow(row);
+        Zotero.Promise.spawn(function* () {
+            var row = event.currentTarget.parentNode;
+            var data = readDataFromOpenRow(row);
 
-			row.removeChild(data.abbrevNode);
-			
-			// Now rawval shifts to become the system_id
-			if (data.rawNode.getAttribute("system_id")) {
-				data.rawVal = data.rawNode.getAttribute("system_id");
-			}
-			
-			var jurisdictionCode = yield Zotero.CachedJurisdictionData.setJurisdictionByIdOrName(data.jurisdictionVal);
-			
-			yield AFZ.db.executeTransaction(function* () {
-				yield AFZ.saveEntry(data.styleIDVal, jurisdictionCode, data.categoryVal, data.rawVal, data.abbrevVal);
-			});
+            row.removeChild(data.abbrevNode);
+            
+            // Now rawval shifts to become the system_id
+            if (data.rawNode.getAttribute("system_id")) {
+                // Rawval is set to system_id, which is Item.libraryKey (see above)
+                // This is used for the database operation
+                data.rawVal = data.rawNode.getAttribute("system_id");
+            }
+            
+            var jurisdictionCode = yield Zotero.CachedJurisdictionData.setJurisdictionByIdOrName(data.jurisdictionVal);
+            
+            yield AFZ.db.executeTransaction(function* () {
+                yield AFZ.saveEntry(data.styleIDVal, jurisdictionCode, data.categoryVal, data.rawVal, data.abbrevVal);
+            });
 
-			// Reverse remap hereinafter key here
-			if ("hereinafter" === data.categoryVal) {
-				var entryItem = Zotero.Items.parseLibraryKeyHash(data.rawVal);
-				if (entryItem) {
-					entryItem = Zotero.Items.getByLibraryAndKey(entryItem.libraryID, entryItem.key);
-				} else {
-					entryItem = Zotero.Items.get(data.rawVal);
-				}
-				data.rawVal = entryItem.id;
-			}
+            if ("hereinafter" === data.categoryVal) {
+                // For the in-memory lookup, we use the Item.id, so we have to transform data.rawVal (back and forth, back and forth)
+                var { libraryID, key } = Zotero.Items.parseLibraryKey(data.rawVal);
+                entryItem = Zotero.Items.getByLibraryAndKey(libraryID, key);
+                if (entryItem) {
+                    data.rawVal = entryItem.id;
+                }
+            }
 
-			// Assuming all of that went well, set value on memory object
-			if (!transform.abbrevs[jurisdictionCode]) {
-				transform.abbrevs[jurisdictionCode] = new AFZ.CSL.AbbreviationSegments();
-			}
-			transform.abbrevs[jurisdictionCode][data.categoryVal][data.rawVal] = data.abbrevVal;
-			
-			var abbrevbox = document.createElement("description");
-			abbrevbox.setAttribute("value", data.abbrevVal);
-			abbrevbox.setAttribute("flex", "1");
-			abbrevbox.setAttribute("class", "zotero-clicky");
-			row.appendChild(abbrevbox);
-		});
+            // Assuming all of that went well, set value on memory object
+            if (!transform.abbrevs[jurisdictionCode]) {
+                transform.abbrevs[jurisdictionCode] = new AFZ.CSL.AbbreviationSegments();
+            }
+            transform.abbrevs[jurisdictionCode][data.categoryVal][data.rawVal] = data.abbrevVal;
+            
+            var abbrevbox = document.createElement("description");
+            abbrevbox.setAttribute("value", data.abbrevVal);
+            abbrevbox.setAttribute("flex", "1");
+            abbrevbox.setAttribute("class", "zotero-clicky");
+            row.appendChild(abbrevbox);
+        });
     };
 
     function addHiddenNode(row, value) {
@@ -478,7 +480,7 @@ var Abbrevs_Filter_Dialog = new function () {
         textbox.value = '';
         textbox.blur();
 
-	}
+    }
 
     function buildResourceList() {
         var popup = document.getElementById('resource-list-popup');
@@ -500,19 +502,19 @@ var Abbrevs_Filter_Dialog = new function () {
         }
     }
     
-	function importChooseSourceFile () {
-		var nsIFilePicker = Components.interfaces.nsIFilePicker;
-		var fp = Components.classes["@mozilla.org/filepicker;1"]
-			.createInstance(nsIFilePicker);
-		fp.init(window, "Select a JSON file containing list data for import", nsIFilePicker.modeOpen);
-		fp.appendFilter("JSON data", "*.json");
-		var rv = fp.show();
-		if (rv == nsIFilePicker.returnOK || rv == nsIFilePicker.returnReplace) {
-			AbbrevsFilter.fileForImport = fp.file;
-			var elem = document.getElementById("file-for-import");
-			elem.setAttribute('value',fp.file.path);
-		}
-	}
+    function importChooseSourceFile () {
+        var nsIFilePicker = Components.interfaces.nsIFilePicker;
+        var fp = Components.classes["@mozilla.org/filepicker;1"]
+            .createInstance(nsIFilePicker);
+        fp.init(window, "Select a JSON file containing list data for import", nsIFilePicker.modeOpen);
+        fp.appendFilter("JSON data", "*.json");
+        var rv = fp.show();
+        if (rv == nsIFilePicker.returnOK || rv == nsIFilePicker.returnReplace) {
+            AbbrevsFilter.fileForImport = fp.file;
+            var elem = document.getElementById("file-for-import");
+            elem.setAttribute('value',fp.file.path);
+        }
+    }
 
     /*
      * Jurisdiction suppression UI utility functions
@@ -521,10 +523,10 @@ var Abbrevs_Filter_Dialog = new function () {
     var setJurisdictionNode = Zotero.Promise.coroutine(function* (comment,value) {
         var suppressionList = document.getElementById("suppression-list");
         var jurisdictionNode = document.createElement('label');
-		//
-		// XXXXX For future cleanup. We only suppress countries now (a single element)
-		// XXXXX so these operations on the : divider are unnecessary.
-		//
+        //
+        // XXXXX For future cleanup. We only suppress countries now (a single element)
+        // XXXXX so these operations on the : divider are unnecessary.
+        //
         jurisdictionNode.setAttribute('id','sj-' + comment.replace(':','-','g'));
         jurisdictionNode.setAttribute('value',value);
         jurisdictionNode.setAttribute('style','border:1px solid black;border-radius:6px;white-space:nowrap;background:white;padding: 0 6px 0 6px;cursor:pointer;');
@@ -544,50 +546,50 @@ var Abbrevs_Filter_Dialog = new function () {
         suppressionList.appendChild(jurisdictionNode);
     }.bind(this));
 
-	var addToSuppressJurisdictions = Zotero.Promise.coroutine(function* (jurisdiction, jurisdictionName) {
-		// Memory and DB
-		var result = yield confirmJurisdictionValues(jurisdiction,styleID);
-		if (result && result.jurisdictionID) {
-			yield addJurisdictionValues(result);
-			io.style.opt.suppressedJurisdictions[jurisdiction] = jurisdictionName;
-			return true;
-		} else {
-			return false;
-		}
-	});
-	
+    var addToSuppressJurisdictions = Zotero.Promise.coroutine(function* (jurisdiction, jurisdictionName) {
+        // Memory and DB
+        var result = yield confirmJurisdictionValues(jurisdiction,styleID);
+        if (result && result.jurisdictionID) {
+            yield addJurisdictionValues(result);
+            io.style.opt.suppressedJurisdictions[jurisdiction] = jurisdictionName;
+            return true;
+        } else {
+            return false;
+        }
+    });
+    
     var removeFromSuppressJurisdictions = Zotero.Promise.coroutine(function* (jurisdiction) {
         // Memory and DB
         var result = yield confirmJurisdictionValues(jurisdiction,styleID);
         yield removeJurisdictionValues(result);
         delete io.style.opt.suppressedJurisdictions[jurisdiction];
     });
-	
+    
     var addJurisdictionValues = Zotero.Promise.coroutine(function* (result) {
-		yield AFZ.db.executeTransaction(function* () {
-			var sql = "SELECT COUNT(*) FROM suppressme WHERE listID=? AND jurisdictionID=?";
-			var count = yield AFZ.db.valueQueryAsync(sql,[result.listID,result.jurisdictionID]);
-			if (!count) {
-				var sql = "INSERT INTO suppressme VALUES (NULL,?,?)";
-				yield AFZ.db.queryAsync(sql,[result.jurisdictionID,result.listID]);
-			}
-		});
+        yield AFZ.db.executeTransaction(function* () {
+            var sql = "SELECT COUNT(*) FROM suppressme WHERE listID=? AND jurisdictionID=?";
+            var count = yield AFZ.db.valueQueryAsync(sql,[result.listID,result.jurisdictionID]);
+            if (!count) {
+                var sql = "INSERT INTO suppressme VALUES (NULL,?,?)";
+                yield AFZ.db.queryAsync(sql,[result.jurisdictionID,result.listID]);
+            }
+        });
     });
-	
+    
     var removeJurisdictionValues = Zotero.Promise.coroutine(function* (result) {
-		yield AFZ.db.executeTransaction(function* () {
-			var sql = "SELECT COUNT(*) FROM suppressme WHERE listID=? AND jurisdictionID=?";
-			var params = [
-				result.listID,
-				result.jurisdictionID
-			]
-			if (yield AFZ.db.valueQueryAsync(sql, params)) {
-				var sql = "DELETE FROM suppressme WHERE listID=? AND jurisdictionID=?";
-				yield AFZ.db.queryAsync(sql, params);
-			}
-		});
+        yield AFZ.db.executeTransaction(function* () {
+            var sql = "SELECT COUNT(*) FROM suppressme WHERE listID=? AND jurisdictionID=?";
+            var params = [
+                result.listID,
+                result.jurisdictionID
+            ]
+            if (yield AFZ.db.valueQueryAsync(sql, params)) {
+                var sql = "DELETE FROM suppressme WHERE listID=? AND jurisdictionID=?";
+                yield AFZ.db.queryAsync(sql, params);
+            }
+        });
     });
-	
+    
     var confirmJurisdictionValues = Zotero.Promise.coroutine(function* (jurisdiction, styleID) {
         var ret = {};
         var check = yield checkDB('jurisdiction', jurisdiction);
@@ -602,67 +604,67 @@ var Abbrevs_Filter_Dialog = new function () {
         ret.listID = yield getDB('list', styleID);
         return ret;
     });
-	
+    
     var checkDB = Zotero.Promise.coroutine(function* (arg, value) {
         var sql = "SELECT COUNT(*) FROM " + arg + " WHERE " + arg + "=?";
         var ret = yield AFZ.db.valueQueryAsync(sql,[value]);
         return ret;
     });
-	
+    
     var addDB = Zotero.Promise.coroutine(function* (arg, value) {
-		yield AFZ.db.executeTransaction(function* () {
-			var sql = "INSERT INTO " + arg + " VALUES(NULL,?);";
-			yield AFZ.db.queryAsync(sql,[value]);
-		});
+        yield AFZ.db.executeTransaction(function* () {
+            var sql = "INSERT INTO " + arg + " VALUES(NULL,?);";
+            yield AFZ.db.queryAsync(sql,[value]);
+        });
     });
-	
+    
     var getDB = Zotero.Promise.coroutine(function* (arg, value) {
         var sql = "SELECT " + arg + "ID FROM " + arg + " WHERE " + arg + "=?;";
         ret = yield AFZ.db.valueQueryAsync(sql,[value]);
-		return ret;
+        return ret;
     });
-	
+    
     /*
      * Event handlers for jurisdiction suppression autocomplete UI
      */
 
     function handleJurisdictionKeypress (event) {
 
-		switch (event.keyCode) {
-		case event.DOM_VK_ESCAPE:
-		case event.DOM_VK_RETURN:
-			event.preventDefault();
-			event.target.blur();
-			break;
-		case event.DOM_VK_TAB:
-			event.preventDefault();
-			return true;
-		}
-		return false;
+        switch (event.keyCode) {
+        case event.DOM_VK_ESCAPE:
+        case event.DOM_VK_RETURN:
+            event.preventDefault();
+            event.target.blur();
+            break;
+        case event.DOM_VK_TAB:
+            event.preventDefault();
+            return true;
+        }
+        return false;
     }
 
-	function importFunc(window, document) {
-		var params = {};
+    function importFunc(window, document) {
+        var params = {};
 
-		params.mode = document.getElementById("abbrevs-filter-import-options").selectedIndex;
+        params.mode = document.getElementById("abbrevs-filter-import-options").selectedIndex;
 
-		var resourceMenuNode = document.getElementById('resource-list-menu');
-		var resourceMenuVal = resourceMenuNode.value;
-		if (!resourceMenuNode.hidden && resourceMenuVal) {
-			params.resourceListMenuValue = resourceMenuVal;
-		} else {
-			params.resourceListMenuValue = false;
-		}
+        var resourceMenuNode = document.getElementById('resource-list-menu');
+        var resourceMenuVal = resourceMenuNode.value;
+        if (!resourceMenuNode.hidden && resourceMenuVal) {
+            params.resourceListMenuValue = resourceMenuVal;
+        } else {
+            params.resourceListMenuValue = false;
+        }
 
-		var fileForImportNode = document.getElementById('file-for-import');
-		if (!fileForImportNode.hidden && AbbrevsFilter.fileForImport) {
-			params.fileForImport = AbbrevsFilter.fileForImport;
-		} else {
-			params.fileForImport = false;
-		}
+        var fileForImportNode = document.getElementById('file-for-import');
+        if (!fileForImportNode.hidden && AbbrevsFilter.fileForImport) {
+            params.fileForImport = AbbrevsFilter.fileForImport;
+        } else {
+            params.fileForImport = false;
+        }
 
-		params.styleID = AbbrevsFilter.styleID;
+        params.styleID = AbbrevsFilter.styleID;
 
-		AbbrevsFilter.importList(window, document, params);
-	}
+        AbbrevsFilter.importList(window, document, params);
+    }
 }
